@@ -31,3 +31,122 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* Globals */
+
+section {
+  padding: 1rem;
+}
+
+.main-btn {
+  padding: 1rem;
+  background-color: #68BC95;
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Onboarding */
+
+.hero {
+  background-image: url("../img/hero.png");
+  background-position: center;
+  background-size: cover;
+  height: 45vh;
+  width: 100%;
+  position: relative;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+}
+
+.onboarding__scroll {
+  scroll-snap-type: x mandatory;
+  display: flex;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+}
+
+.onboarding {
+  min-width: 100vw;
+  height: 55vh;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.onboarding__step {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #D7D7D7;
+  margin: 1rem;
+}
+
+.active-step {
+  height: 12px;
+  width: 12px;
+  background-color: #68BC95;
+}
+
+.onboarding__btn__subtitle {
+  color: #ADADAD;
+}
+
+#icon-swipe {
+  width: 100px;
+  height: 50px;
+
+  #hand {
+    fill: #ADADAD;
+    transform-origin: 50% 100%;
+    animation: hand-swipe 3.5s infinite ease;
+  }
+
+  #hand-start {
+    fill: #ADADAD;
+    transform-origin: 50% 100%;
+    animation: hand-swipe-start 3.5s infinite ease;
+  }
+  #left, #right {
+    fill: #ADADAD;
+    opacity: 0;
+  }
+  #right { animation: arrow-right 3.5s infinite ease; }
+  #left { animation: arrow-left 3.5s infinite ease; }
+}
+
+@keyframes hand-swipe {
+  5% { transform: translateX(3px) rotate(6deg); }
+  25% { transform: translateX(0px) rotate(0deg); }
+  28% { transform: translateX(0px) rotate(0deg); }
+  33% { transform: translateX(-3px) rotate(-6deg); }
+  53% { transform: translateX(0px) rotate(0deg); }
+  100% { transform: translateX(0px) rotate(0deg); }
+}
+
+@keyframes hand-swipe-start {
+  5% { transform: translateX(3px) rotate(6deg); }
+  25% { transform: translateX(0px) rotate(0deg); }
+  28% { transform: translateX(0px) rotate(0deg); }
+  33% { transform: translateX(0px) rotate(0deg); }
+  53% { transform: translateX(0px) rotate(0deg); }
+  100% { transform: translateX(0px) rotate(0deg); }
+}
+
+@keyframes arrow-right {
+  7% { transform: translateX(8px); opacity: 1; }
+  17% { transform: translateX(10px); opacity: 0; }
+  18%, 100% { transform: translateX(0); opacity: 0; }
+}
+
+@keyframes arrow-left {
+  0%, 30% { transform: translateX(0); opacity: 0; }
+  37% { transform: translateX(-8px); opacity: 1; }
+  47% { transform: translateX(-10px); opacity: 0; }
+  48%, 100% { transform: translateX(0); opacity: 0; }
+}
+
+

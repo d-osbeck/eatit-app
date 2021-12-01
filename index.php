@@ -11,6 +11,9 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -35,7 +38,7 @@
             </div>
 
             <div class="d-flex justify-content-center mt-4">
-                <svg class="mt-3" id="icon-swipe" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 30 25"><title>icon-swipe</title><path id="right" d="M30,3.5,26.56,7l-.81-.82,2.06-2.1H22V2.92h5.81L25.74.82,26.55,0Z"/><path id="hand-start" d="M25.41,11.18l-5.08-3A2.32,2.32,0,0,0,19,7.74a2.37,2.37,0,0,0-1.72.75v-5a2.46,2.46,0,0,0-.71-1.74A2.38,2.38,0,0,0,14.84,1h0a2.44,2.44,0,0,0-2.41,2.46V14.6l-.69-.7a4.7,4.7,0,0,0-3.36-1.42A4.75,4.75,0,0,0,6.32,13a1.26,1.26,0,0,0-.69.92A1.32,1.32,0,0,0,6,15l7.69,7.83A7.59,7.59,0,0,0,19,25a7.73,7.73,0,0,0,7.65-7.79V13.29A2.42,2.42,0,0,0,25.41,11.18Zm0,6A6.46,6.46,0,0,1,19,23.73h0a6.31,6.31,0,0,1-4.41-1.8L6.87,14.1a3.37,3.37,0,0,1,1.5-.35h0a3.42,3.42,0,0,1,2.47,1.05l1.53,1.55a.52.52,0,0,0,.36.16l.19,0a1.18,1.18,0,0,0,.75-1.1V3.46a1.17,1.17,0,0,1,1.16-1.19h0A1.18,1.18,0,0,1,16,3.46v6.91a.6.6,0,0,0,.39.56l.2,0a.58.58,0,0,0,.45-.22l1-1.3A1.16,1.16,0,0,1,19,9a1.12,1.12,0,0,1,.68.23l5.12,3a1.18,1.18,0,0,1,.59,1Z"/></svg>
+                <svg class="mt-3" id="icon-swipe" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 30 25"><title>icon-swipe</title><path id="left" d="M8,4.08H2.19l2.06,2.1L3.44,7,0,3.5,3.45,0l.81.82L2.19,2.92H8Z"/><path id="hand-start" d="M25.41,11.18l-5.08-3A2.32,2.32,0,0,0,19,7.74a2.37,2.37,0,0,0-1.72.75v-5a2.46,2.46,0,0,0-.71-1.74A2.38,2.38,0,0,0,14.84,1h0a2.44,2.44,0,0,0-2.41,2.46V14.6l-.69-.7a4.7,4.7,0,0,0-3.36-1.42A4.75,4.75,0,0,0,6.32,13a1.26,1.26,0,0,0-.69.92A1.32,1.32,0,0,0,6,15l7.69,7.83A7.59,7.59,0,0,0,19,25a7.73,7.73,0,0,0,7.65-7.79V13.29A2.42,2.42,0,0,0,25.41,11.18Zm0,6A6.46,6.46,0,0,1,19,23.73h0a6.31,6.31,0,0,1-4.41-1.8L6.87,14.1a3.37,3.37,0,0,1,1.5-.35h0a3.42,3.42,0,0,1,2.47,1.05l1.53,1.55a.52.52,0,0,0,.36.16l.19,0a1.18,1.18,0,0,0,.75-1.1V3.46a1.17,1.17,0,0,1,1.16-1.19h0A1.18,1.18,0,0,1,16,3.46v6.91a.6.6,0,0,0,.39.56l.2,0a.58.58,0,0,0,.45-.22l1-1.3A1.16,1.16,0,0,1,19,9a1.12,1.12,0,0,1,.68.23l5.12,3a1.18,1.18,0,0,1,.59,1Z"/></svg>
             </div>
         </div>
     </section>
@@ -90,7 +93,7 @@
             </div>
 
             <div class="onboarding__main p-3">
-                <h2 class="onboarding__title mb-4">Velkommen til Eat It</h2>
+                <h2 class="onboarding__title mb-4">Velkommen til <span class="highlight-text">Eat It</span></h2>
                 <p class="onboarding__description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
             </div>
 
@@ -103,7 +106,7 @@
             </div>
 
             <div class="d-flex justify-content-center">
-                <a class="onboarding__btn__subtitle text-decoration-none">Fortsæt som gæst</a>
+                <a class="onboarding__btn__subtitle text-decoration-none" href="ingredienser.php">Fortsæt som gæst</a>
             </div>
         </div>
     </section>

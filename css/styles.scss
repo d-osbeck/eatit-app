@@ -4,11 +4,15 @@
 
 body {
   margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
 }
 
 ul, ol {
@@ -32,6 +36,13 @@ img {
   height: auto;
 }
 
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
+
 /* Globals */
 
 section {
@@ -45,6 +56,23 @@ section {
   color: white;
   font-size: 1rem;
   font-weight: 500;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #1D1D1D;
+}
+
+.input-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  border: 2px solid #E8E8E8;
 }
 
 /* Onboarding */
@@ -95,6 +123,10 @@ section {
   color: #ADADAD;
 }
 
+.highlight-text {
+  color: #68BC95;
+}
+
 #icon-swipe {
   width: 100px;
   height: 50px;
@@ -128,10 +160,10 @@ section {
 }
 
 @keyframes hand-swipe-start {
-  5% { transform: translateX(3px) rotate(6deg); }
+  5% { transform: translateX(0px) rotate(0deg); }
   25% { transform: translateX(0px) rotate(0deg); }
   28% { transform: translateX(0px) rotate(0deg); }
-  33% { transform: translateX(0px) rotate(0deg); }
+  33% { transform: translateX(-3px) rotate(-6deg); }
   53% { transform: translateX(0px) rotate(0deg); }
   100% { transform: translateX(0px) rotate(0deg); }
 }
@@ -147,6 +179,52 @@ section {
   37% { transform: translateX(-8px); opacity: 1; }
   47% { transform: translateX(-10px); opacity: 0; }
   48%, 100% { transform: translateX(0); opacity: 0; }
+}
+
+/* Nav bar */
+
+.nav__menu {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+  padding: 1.5rem;
+}
+
+.nav__link {
+  color: #1D1D1D;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+
+.nav__text {
+  font-size: .875rem;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+}
+
+.nav__menu .active {
+  color: #68BC95;
+}
+
+/* Header bar */
+
+.header__profile-pic {
+  width: 45px;
+  height: 45px;
+  border-radius: 15px;
+  background-image: url('../img/placeholder-profile.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.header__name {
+  font-weight: 500;
 }
 
 

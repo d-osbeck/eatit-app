@@ -1,19 +1,12 @@
-/* Login skjul kodeord */
-const showHiddenInput = (inputPassword, inputIcon) => {
-    const input = document.getElementById(inputPassword),
-          iconEye = document.getElementById(inputIcon)
+/* Go back link */
 
-    iconEye.addEventListener('click', () => {
-        if(input.type === 'password'){
-            input.type = 'text'
+const goBack = document.getElementById('back-link');
 
-            iconEye.classList.add('fa-eye-slash')
-        }else{
-            input.type = 'password'
+goBack.setAttribute('href', document.referrer);
 
-            iconEye.classList.remove('fa-eye-slash')
-        }
-    })
-}
+goBack.onclick = function() {
+    history.back();
+    return false;
+};
 
-showHiddenInput('password-input','login-hide')
+/* */

@@ -98,10 +98,8 @@
             </div>
 
             <div class="onboarding__btn m-4 mb-3">
-                <a class="text-decoration-none" href="login.php">
-                    <div class="main-btn d-flex justify-content-center mx-4">
-                        <p class="onboarding__btn__title">Log ind / Tilmeld</p>
-                    </div>
+                <a href="login.php" class="main-btn d-flex justify-content-center mx-4 text-decoration-none">
+                    <p class="onboarding__btn__title">Log ind / Tilmeld</p>
                 </a>
             </div>
 

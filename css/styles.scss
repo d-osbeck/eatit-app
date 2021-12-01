@@ -58,6 +58,15 @@ section {
   font-weight: 500;
 }
 
+.secondary-btn {
+  padding: 1rem;
+  border: 2px solid #68BC95;
+  border-radius: 10px;
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 .input {
   width: 100%;
   border: none;
@@ -224,6 +233,13 @@ section {
 }
 
 .header__name {
+  font-weight: 500;
+}
+
+/* Vis mere */
+
+.main__support__msg {
+  font-size: .875rem;
   font-weight: 500;
 }
 

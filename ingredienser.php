@@ -43,7 +43,10 @@
     </div>
 </section>
 
-<?php include 'includes/nav.php' ?>
+
+<?php $page="ingredienser.php"?>
+
+<?php include 'nav.php'?>
 
 <script src="js/main.js"></script>
 

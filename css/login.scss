@@ -1,0 +1,34 @@
+.main__account img {
+  width: 16px;
+  height: 16px;
+}
+
+.login__label {
+  font-weight: 500;
+}
+
+.login-hide {
+  color: #ADADAD;
+  cursor: pointer;
+}
+
+.login__forgot {
+  display: block;
+  width: max-content;
+  margin-left: auto;
+  margin-top: .5rem;
+  font-size: .875rem;
+  color: #ADADAD;
+}
+
+.register__btn {
+  padding: .75rem 1rem;
+  margin-top: .5rem;
+  border-radius: .5rem;
+  border: 2px solid #68BC95;
+  color: #1D1D1D;
+}
+
+.main__tos {
+  font-size: .875rem;
+}

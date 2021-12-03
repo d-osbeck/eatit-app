@@ -40,8 +40,8 @@ function displayTodo() {
         `<div class="d-flex justify-content-between mt-2">
             <p class="text-black my-auto">${list}</p>
             <div class="">
-            <button onclick='edit(${ind})' class="rounded-3 btn btn-primary"><img class="icon__size" src="img/001-shopping-basket-sort.png" alt=""></button>
-            <button onclick='displayModal()' class="rounded-3 btn btn-danger"><img class="icon__size" src="img/001-shopping-basket-sort.png" alt=""</button>
+            <button onclick='edit(${ind})' class="rounded-3 btn btn-primary"><img class="icon__size" src="../img/001-shopping-basket-sort.png" alt=""></button>
+            <button onclick='displayModal()' class="rounded-3 btn btn-danger"><img class="icon__size" src="../img/001-shopping-basket-sort.png" alt=""</button>
             </div>
         </div>`;
     });

@@ -32,8 +32,9 @@
                 <path stroke="#ADADAD" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.25 19.25L15.5 15.5M4.75 11C4.75 7.54822 7.54822 4.75 11 4.75C14.4518 4.75 17.25 7.54822 17.25 11C17.25 14.4518 14.4518 17.25 11 17.25C7.54822 17.25 4.75 14.4518 4.75 11Z"></path>
             </svg>
             <label for="search-input"></label>
-            <input type="text" class="search-ingredienser-input search-input input" placeholder="Hvilke ingredienser har du?" id="search-ingredienser-input">
-            <span id="search-result"></span>
+            <template id="resultstemplate"></template>
+            <input list="ingredienser-suggestions" type="text" class="search-ingredienser-input search-input input" placeholder="Hvilke ingredienser har du?" id="search-ingredienser-input" minlength="2">
+            <datalist id="ingredienser-suggestions"></datalist>
         </div>
         <div class="input-btn d-flex justify-content-center align-items-center ms-1">
             <i class="fas fa-plus"></i>
@@ -62,8 +63,8 @@
     import Ingredienser from "./js/ingredienser.js";
 
     const ingredienser = new Ingredienser();
+    ingredienser.searchSuggestions();
 </script>
-
 
 <script src="https://kit.fontawesome.com/d7a71e7a7e.js" crossorigin="anonymous"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

@@ -8,11 +8,29 @@ export default class Ingredienser {
         this.rootElem = document.querySelector('.main__content');
         this.addBtn = document.querySelector('.input-btn');
         this.searchContainer = document.querySelector('.main__search');
+        this.datalist = document.querySelector('#ingredienser-suggestions');
         this.items = this.rootElem.querySelector('.items__list');
         this.ingrediensSearch = this.searchContainer.querySelector('.search-ingredienser-input');
 
         this.addBtn.addEventListener('click', () => this.render());
 
+    }
+
+    async searchSuggestions(){
+        const data = await this.getData();
+
+        const datalistContainer = document.createElement('div');
+        datalistContainer.classList.add('ingredienser-suggestions-list');
+
+        for(const item of data){
+            const datalistOption = document.createElement('option');
+            datalistOption.innerHTML = `${item.ingrNavn}`;
+
+            datalistContainer.appendChild(datalistOption);
+        }
+
+        this.datalist.innerHTML='';
+        this.datalist.appendChild(datalistContainer);
     }
 
     async render(){

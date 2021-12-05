@@ -8,3 +8,12 @@
 .items__list i {
   cursor: pointer;
 }
+
+.ingredienser-suggestions-list {
+  height: 4em !important;
+  overflow: hidden !important;
+}
+
+[list]::-webkit-calendar-picker-indicator {
+  display: none !important;
+}

@@ -8,29 +8,38 @@ export default class Ingredienser {
         this.rootElem = document.querySelector('.main__content');
         this.addBtn = document.querySelector('.input-btn');
         this.searchContainer = document.querySelector('.main__search');
-        this.datalist = document.querySelector('#ingredienser-suggestions');
+        this.matchList = document.querySelector('#match-list');
         this.items = this.rootElem.querySelector('.items__list');
         this.ingrediensSearch = this.searchContainer.querySelector('.search-ingredienser-input');
 
         this.addBtn.addEventListener('click', () => this.render());
-
     }
 
-    async searchSuggestions(){
+    async searchIngredienserInit(){
+        this.ingrediensSearch.addEventListener('input', () => {
+            this.searchIngredienser();
+        });
+
+        await this.searchIngredienser();
+    }
+
+    async searchIngredienser(){
         const data = await this.getData();
 
-        const datalistContainer = document.createElement('div');
-        datalistContainer.classList.add('ingredienser-suggestions-list');
+            const matchWrapper = document.createElement('div');
 
-        for(const item of data){
-            const datalistOption = document.createElement('option');
-            datalistOption.innerHTML = `${item.ingrNavn}`;
+                for(const item of data) {
+                const match = document.createElement('div');
+                match.classList.add('card', 'card-body', 'mb-1');
 
-            datalistContainer.appendChild(datalistOption);
-        }
+                match.innerHTML = `
+                    <h5>${item.ingrNavn}</h5>
+                `;
 
-        this.datalist.innerHTML='';
-        this.datalist.appendChild(datalistContainer);
+                matchWrapper.appendChild(match);
+            }
+        this.matchList.innerHTML = '';
+        this.matchList.appendChild(matchWrapper);
     }
 
     async render(){

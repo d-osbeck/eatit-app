@@ -34,12 +34,12 @@
             <label for="search-input"></label>
             <template id="resultstemplate"></template>
             <input list="ingredienser-suggestions" type="text" class="search-ingredienser-input search-input input" placeholder="Hvilke ingredienser har du?" id="search-ingredienser-input" minlength="2">
-            <datalist id="ingredienser-suggestions"></datalist>
         </div>
         <div class="input-btn d-flex justify-content-center align-items-center ms-1">
             <i class="fas fa-plus"></i>
         </div>
     </div>
+    <div id="match-list"></div>
 
     <div class="main__content container">
         <div class="main__content__title mt-4">
@@ -63,7 +63,7 @@
     import Ingredienser from "./js/ingredienser.js";
 
     const ingredienser = new Ingredienser();
-    ingredienser.searchSuggestions();
+    ingredienser.searchIngredienserInit();
 </script>
 
 <script src="https://kit.fontawesome.com/d7a71e7a7e.js" crossorigin="anonymous"></script>

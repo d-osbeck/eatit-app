@@ -13,14 +13,7 @@ export default class Ingredienser {
         this.ingrediensSearch = this.searchContainer.querySelector('.search-ingredienser-input');
 
         this.addBtn.addEventListener('click', () => this.render());
-    }
-
-    async searchIngredienserInit(){
-        this.ingrediensSearch.addEventListener('input', () => {
-            this.searchIngredienser();
-        });
-
-        await this.searchIngredienser();
+        this.ingrediensSearch.addEventListener('input', () => this.searchIngredienser());
     }
 
     async searchIngredienser(){
@@ -28,19 +21,23 @@ export default class Ingredienser {
 
             const matchWrapper = document.createElement('div');
 
-                for(const item of data) {
+            if (this.ingrediensSearch.value.length > 0) {
+                for(const item of data.slice(0,3)) {
                 const match = document.createElement('div');
                 match.classList.add('card', 'card-body', 'mb-1');
 
                 match.innerHTML = `
-                    <h5>${item.ingrNavn}</h5>
+                    <p class="fw-bold">${item.ingrNavn}</p>
                 `;
 
                 matchWrapper.appendChild(match);
             }
         this.matchList.innerHTML = '';
         this.matchList.appendChild(matchWrapper);
+    } else {
+        this.matchList.innerHTML = '';
     }
+}
 
     async render(){
         const data = await this.getData();

@@ -8,12 +8,36 @@ export default class Ingredienser {
         this.rootElem = document.querySelector('.main__content');
         this.addBtn = document.querySelector('.input-btn');
         this.searchContainer = document.querySelector('.main__search');
+        this.matchList = document.querySelector('#match-list');
         this.items = this.rootElem.querySelector('.items__list');
         this.ingrediensSearch = this.searchContainer.querySelector('.search-ingredienser-input');
 
         this.addBtn.addEventListener('click', () => this.render());
-
+        this.ingrediensSearch.addEventListener('input', () => this.searchIngredienser());
     }
+
+    async searchIngredienser(){
+        const data = await this.getData();
+
+            const matchWrapper = document.createElement('div');
+
+            if (this.ingrediensSearch.value.length > 0) {
+                for(const item of data.slice(0,3)) {
+                const match = document.createElement('div');
+                match.classList.add('card', 'card-body', 'mb-1');
+
+                match.innerHTML = `
+                    <p class="fw-bold">${item.ingrNavn}</p>
+                `;
+
+                matchWrapper.appendChild(match);
+            }
+        this.matchList.innerHTML = '';
+        this.matchList.appendChild(matchWrapper);
+    } else {
+        this.matchList.innerHTML = '';
+    }
+}
 
     async render(){
         const data = await this.getData();

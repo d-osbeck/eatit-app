@@ -22,7 +22,7 @@
             <div class="modal-body">
                 <form onsubmit="callme()">
                     <p>Enter your name</p>
-                    <input id="tbName" type="text" value="Liste">
+                    <input id="tbName" type="text" placeholder="Liste">
                     <button type="button" class="btn btn-danger rounded-3 border-black" data-bs-dismiss="modal">Luk</button>
                     <button type="submit" value="submit" class="rounded-3 border-black btn btn-primary comfirm" data-bs-dismiss="modal">Ok</button>
                 </form>

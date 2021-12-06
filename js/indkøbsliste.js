@@ -5,6 +5,8 @@ const saveTaskButton = document.getElementById("btn__save");
 const listBox = document.getElementById("listBox");
 const saveInd = document.getElementById("saveIndex");
 
+let name = document.querySelector('#tbName');
+
 
 let todoArray = [];
 
@@ -92,7 +94,7 @@ saveTaskButton.addEventListener("click", () => {
 function removeAll(){
     window.localStorage.clear();
     document.getElementById("listBox").innerHTML = "";
-    document.getElementById("welcome").innerHTML = "Liste ";
+    document.getElementById("welcome").innerHTML = "Liste";
 }
 
 clearList.addEventListener("click", () => {
@@ -100,14 +102,11 @@ clearList.addEventListener("click", () => {
 })
 
 function callme(){
-    let name = document.getElementById('tbName').value;
     localStorage.setItem('userName', name);
 }
 
-window.addEventListener('load', (event) => {
-    if(name === null) {
-        document.getElementById('welcome').innerText = 'Liste';
-    } else {
-        document.getElementById('welcome').innerText = localStorage.getItem('userName');
-    }
-});
+if(name) {
+    document.getElementById('welcome').innerText = 'Liste';
+} else {
+    document.getElementById('welcome').innerText = localStorage.getItem('userName');
+}

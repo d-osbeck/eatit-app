@@ -19,7 +19,24 @@
 .section__antal__textitems p {
   margin-bottom: 15px;
 }
-
 .section__beskrivelse__textitems p {
   margin-bottom: 15px;
+}
+.img__icon__size {
+  height: 60px;
+}
+.othersrate__icon__size {
+  height: 32px;
+  width: 32px;
+}
+.list__item {
+  background-color: #68BC95;
+  color: white;
+  font-size: .875rem;
+  border-radius: 5px;
+}
+.list__item img {
+  height: 15px;
+  width: 15px;
+  color: white;
 }

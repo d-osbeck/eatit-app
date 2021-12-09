@@ -1,6 +1,6 @@
-/* Go back link */
+/* Go back knap */
 
-const goBack = document.getElementById('back-link');
+const goBack = document.querySelector('#back-link');
 
 goBack.setAttribute('href', document.referrer);
 
@@ -9,4 +9,12 @@ goBack.onclick = function() {
     return false;
 };
 
-/* */
+/* Skift category knap farve */
+
+let categoryBtn = document.querySelectorAll('.category-icon');
+
+    for(const button of categoryBtn){
+        button.addEventListener('click', () => {
+            button.classList.toggle('category-icon-toggle');
+    });
+}

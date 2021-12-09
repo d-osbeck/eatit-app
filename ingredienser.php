@@ -34,20 +34,76 @@
             <label for="search-input"></label>
             <input list="ingredienser-suggestions" type="text" class="search-ingredienser-input search-input input" placeholder="Hvilke ingredienser har du?" id="search-ingredienser-input" minlength="2">
         </div>
-        <div class="input-btn d-flex justify-content-center align-items-center ms-1">
-            <i class="fas fa-plus"></i>
-        </div>
     </div>
-    <div id="match-list" class="container"></div>
+    <div id="match-list" class="container">
+            <!-- Her vises forslag -->
+    </div>
 
     <div class="main__content container">
-        <div class="main__content__title mt-4">
-            <h1>Dine valg</h1>
-        </div>
         <div class="main__content__ingredienser">
+            <div class="main__content__title mt-4">
+                <h1>Dine valg</h1>
+            </div>
             <div class="items__list d-flex flex-wrap">
                 <!-- Her vises ingredienserne -->
             </div>
+        </div>
+        <div class="main__content__categories mt-4">
+            <div class="row mb-3">
+                <div class="col-3 d-flex flex-column justify-content-center align-items-center category-icon">
+                    <i class="far fa-clock fa-lg mb-2"></i>
+                    <p>Hurtigt</p>
+                </div>
+                <div class="col-3 d-flex flex-column justify-content-center align-items-center category-icon">
+                    <i class="fas fa-drumstick-bite fa-lg mb-2"></i>
+                    <p>Kød</p>
+                </div>
+                <div class="col-3 d-flex flex-column justify-content-center align-items-center category-icon">
+                    <i class="fas fa-apple-alt fa-lg mb-2"></i>
+                    <p>Grøntsager</p>
+                </div>
+                <div class="col-3 d-flex flex-column justify-content-center align-items-center category-icon">
+                    <i class="fas fa-fish fa-lg mb-2"></i>
+                    <p>Fisk</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-3 d-flex flex-column justify-content-center align-items-center category-icon">
+                    <i class="fas fa-bread-slice fa-lg mb-2"></i>
+                    <p>Glutenfri</p>
+                </div>
+                <div class="col-3 d-flex flex-column justify-content-center align-items-center category-icon">
+                    <i class="fas fa-leaf fa-lg mb-2"></i>
+                    <p>Vegansk</p>
+                </div>
+                <div class="col-3 d-flex flex-column justify-content-center align-items-center category-icon">
+                    <i class="fas fa-apple-alt fa-lg mb-2"></i>
+                    <p>Laktosefri</p>
+                </div>
+                <div class="col-3 d-flex flex-column justify-content-center align-items-center category-icon">
+                    <i class="fas fa-cubes fa-lg mb-2"></i>
+                    <p>Sukkerfri</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main__content__popular">
+            <div class="main__content__title mt-4">
+            </div>
+        </div>
+
+        <div class="main__content__confirm d-flex justify-content-center">
+            <a class="text-decoration-none" href="#">
+                <div class="secondary-btn d-flex justify-content-center mx-2 mt-4">
+                    <p class="main-btn__title">Start forfra</p>
+                </div>
+            </a>
+            <a class="text-decoration-none" href="#">
+                <div class="main-btn d-flex justify-content-center mx-2 mt-4">
+                    <p class="main-btn__title">Fortsæt</p>
+                </div>
+            </a>
         </div>
     </div>
 </section>

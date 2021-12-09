@@ -12,6 +12,9 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/login.css" rel="stylesheet" type="text/css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -69,22 +72,22 @@
         </div>
 
         <div class="main__register">
-            <a href="ingredienser.php" class="register__btn text-decoration-none d-flex align-items-center mx-4">
+            <a href="ingredienser.php" class="register__btn text-decoration-none d-flex align-items-center mx-4 fw-normal">
                 <img src="img/google.png" alt="Google logo">
                 <div class="w-100 d-flex justify-content-center">Log ind via Google</div>
             </a>
 
-            <a href="ingredienser.php" class="register__btn text-decoration-none d-flex align-items-center mx-4">
+            <a href="ingredienser.php" class="register__btn text-decoration-none d-flex align-items-center mx-4 fw-normal">
                 <img src="img/facebook.png" alt="Facebook logo">
                 <div class="w-100 d-flex justify-content-center">Log ind via Facebook</div>
             </a>
 
-            <a href="ingredienser.php" class="register__btn text-decoration-none d-flex align-items-center mx-4">
+            <a href="ingredienser.php" class="register__btn text-decoration-none d-flex align-items-center mx-4 fw-normal">
                 <img src="img/apple.png" alt="Apple logo">
                 <div class="w-100 d-flex justify-content-center">Log ind via Apple</div>
             </a>
 
-            <a href="#" class="register__btn text-decoration-none d-flex align-items-center mx-4">
+            <a href="#" class="register__btn text-decoration-none d-flex align-items-center mx-4 fw-normal">
                 <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.75 7.75C4.75 6.64543 5.64543 5.75 6.75 5.75H17.25C18.3546 5.75 19.25 6.64543 19.25 7.75V16.25C19.25 17.3546 18.3546 18.25 17.25 18.25H6.75C5.64543 18.25 4.75 17.3546 4.75 16.25V7.75Z"></path>
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5.5 6.5L12 12.25L18.5 6.5"></path>

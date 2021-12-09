@@ -9,9 +9,22 @@
   cursor: pointer;
 }
 
+.ingredients__suggestion i {
+  color: #68BC95;
+}
+
 .ingredienser-suggestions-list {
   height: 4em !important;
   overflow: hidden !important;
+}
+
+.category-icon {
+  color: #ADADAD;
+  font-weight: 400;
+}
+
+.category-icon-toggle {
+  color: #68BC95;
 }
 
 [list]::-webkit-calendar-picker-indicator {

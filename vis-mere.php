@@ -11,6 +11,9 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -46,12 +49,7 @@
         </a>
 
         <a href="#" class="secondary-btn mx-4 my-2 d-flex align-items-center justify-content-between text-decoration-none">
-            <p class="main__item__title fw-normal">Servicevilkår</p>
-            <i class="fas fa-arrow-right"></i>
-        </a>
-
-        <a href="#" class="secondary-btn mx-4 mt-2 mb-0 d-flex align-items-center justify-content-between text-decoration-none">
-            <p class="main__item__title fw-normal">Fortrolighedspolitik</p>
+            <p class="main__item__title fw-normal">Cookie- & Privatlivspolitik</p>
             <i class="fas fa-arrow-right"></i>
         </a>
     </div>

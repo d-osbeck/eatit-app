@@ -3,12 +3,17 @@
 @import "../node_modules/bootstrap/scss/mixins";
 
 $custom-colors:(
-  "primary": #f0f,
-  "background": #3A4151,
+  "background": #FFFFFF,
+  "hightlight": #68BC95,
   "title": #1D1D1D,
   "body": #707070,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+$utilities-colors: map-merge($utilities-colors, $theme-colors-rgb);
+$utilities-text-colors: map-loop($utilities-colors, rgba-css-var, "$key", "text");
+$utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 
 @import "../node_modules/bootstrap/scss/bootstrap";

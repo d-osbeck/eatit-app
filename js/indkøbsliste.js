@@ -5,12 +5,9 @@ const saveTaskButton = document.getElementById("btn__save");
 const listBox = document.getElementById("listBox");
 const saveInd = document.getElementById("saveIndex");
 
-let name = document.querySelector('#tbName');
-
-
 let todoArray = [];
 
-window.addEventListener('load', (event) => {
+window.addEventListener('load', () => {
     JSON.parse(window.localStorage.getItem('todo'));
     displayTodo()
 });
@@ -101,12 +98,14 @@ clearList.addEventListener("click", () => {
     removeAll()
 })
 
+var name = document.querySelector('#tbName');
+
 function callme(){
     localStorage.setItem('userName', name);
 }
 
 if(name) {
-    document.getElementById('welcome').innerText = 'Liste';
+    document.getElementById('welcome').innerText = 'liste';
 } else {
     document.getElementById('welcome').innerText = localStorage.getItem('userName');
 }

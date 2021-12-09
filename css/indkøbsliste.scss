@@ -36,3 +36,22 @@ img {
   height: 25px;
   width: 25px;
 }
+
+.main-btn {
+  padding: 1rem;
+  background-color: var(--highlight);
+  border: 2px solid var(--highlight);
+  border-radius: 10px;
+  color: var(--background);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.secondary-btn {
+  padding: 1rem;
+  border: 2px solid var(--highlight);
+  border-radius: 10px;
+  color: var(--title);
+  font-size: 1rem;
+  font-weight: 400;
+}

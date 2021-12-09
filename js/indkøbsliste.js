@@ -37,17 +37,17 @@ function displayTodo() {
     todoArray.forEach((list, ind) => {
     htmlCode +=
         `<div class="d-flex justify-content-between mt-2">
-            <p class="text-black my-auto">${list}</p>
+            <h5 class="text-black my-auto">${list}</h5>
             <div class="">
-            <button onclick='edit(${ind})' class="rounded-3 btn btn-primary"><img class="icon__size" src="../img/001-shopping-basket-sort.png" alt=""></button>
-            <button onclick='displayModal()' class="rounded-3 btn btn-danger"><img class="icon__size" src="../img/001-shopping-basket-sort.png" alt=""</button>
+            <button onclick='edit(${ind})' class="btn p-0 pe-1"><img class="icon__size" src="img/rediger.svg" alt="rediger"></button>
+            <button onclick='displayModal()' class="btn p-0 pe-1"><img class="icon__size" src="img/slet.svg" alt="slet"</button>
             </div>
         </div>`;
     });
     listBox.innerHTML = htmlCode;
 }
 
-let myModal = new bootstrap.Modal(document.getElementById('exampleModal2'));
+let myModal = new bootstrap.Modal(document.getElementById('exampleModalCenter2'));
 
 function displayModal () {
     myModal.show()

@@ -28,7 +28,7 @@ export default class Opskrifter {
             col.innerHTML = `
                 <div class="d-flex flex-row mt-3 mb-3">
                     <a class="col-5 text-decoration-none text-black" href="opskrift.php?opskId=${item.opskId}">
-                        <img src="img/001-shopping-basket-sort.png" style="width: 100%" class="rounded-3">
+                        <img src="img/${item.opskBillede}" style="width: 100%" class="rounded-3">
                     </a>
                     <div class="col-7 ps-3 d-flex flex-column justify-content-between">
                         <div class="">
@@ -36,8 +36,8 @@ export default class Opskrifter {
                             <div class="">"Her skal ingredienser være"</div>
                         </div>
                         <div class="d-flex">
-                            <p class="me-2">${item.opskTid} min</p>
-                            <p class="d-flex"><img src="img/001-shopping-basket-sort.png" style="height: 20px" alt="stjerne">${item.opskRate}/5</p>
+                            <p class="me-2">${item.opskTidText}</p>
+                            <p class="d-flex"><img src="img/stjerne_gul.svg" style="height: 20px" alt="stjerne">${item.opskRate}/5</p>
                         </div>
                     </div>
                 </div>

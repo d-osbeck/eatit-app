@@ -13,7 +13,7 @@
 </head>
 <body>
 <!--Navn på indkøbslisten-->
-<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModalCenter1" role="document" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content rounded-3">
             <div class="modal-header">
@@ -23,40 +23,42 @@
             <div class="modal-body">
 
                 <form onsubmit="callme()">
-                    <input id="tbName" type="text" placeholder="Liste">
-                    <button type="button" class="btn btn-danger rounded-3 border-black" data-bs-dismiss="modal">Luk</button>
-                    <button type="submit" value="submit" class="rounded-3 border-black btn btn-primary comfirm" data-bs-dismiss="modal">Ok</button>
+                    <input class="mb-4" style="width: 100%" id="tbName" type="text" placeholder="Liste">
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="secondary-btn me-3" data-bs-dismiss="modal">Luk</button>
+                        <button type="submit" value="submit" class="main-btn ms-3 comfirm" data-bs-dismiss="modal">Ok</button>
+                    </div>
                 </form>
             </div>
         </div>
     </div>
 </div>
 <!--Slet vare-->
-<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+<div class="modal fade" id="exampleModalCenter2" role="document" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Vil du slette vare?</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Nej</button>
-                <button type="button" id="btn__delete" class="btn btn-primary" data-bs-dismiss="modal">Ja</button>
+            <div class="modal-footer d-flex justify-content-center">
+                <button type="button" class="secondary-btn " data-bs-dismiss="modal">Nej</button>
+                <button type="button" id="btn__delete" class="main-btn" data-bs-dismiss="modal">Ja</button>
             </div>
         </div>
     </div>
 </div>
 <!--Slet listen-->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+<div class="modal fade" id="exampleModalCenter" role="document" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Vil du slette vare?</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Vil du slette listen?</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Nej</button>
-                <button type="button" id="btn__removeall" class="btn btn-primary" data-bs-dismiss="modal">Ja</button>
+            <div class="modal-footer d-flex justify-content-center">
+                <button type="button" class="secondary-btn" data-bs-dismiss="modal">Nej</button>
+                <button type="button" id="btn__removeall" class="main-btn" data-bs-dismiss="modal">Ja</button>
             </div>
         </div>
     </div>
@@ -70,26 +72,31 @@
     </div>
 </section>
 
-<section>
-    <div class="">
-            <div class="d-flex justify-content-between mb-3">
-                <input class="rounded-3 border-light me-3 vw-100" name="text" id="text" placeholder="tilføj vare fx 6 æg">
-                <input type="hidden" id="saveIndex">
-                <button class="rounded-3 btn btn-success flex-shrink-0" id="btn__add"><img class="icon__size" src="img/001-shopping-basket-sort.png" alt=""></button>
-                <button class="rounded-3 btn btn-success" style="display: none" id="btn__save"><img class="icon__size" src="img/001-shopping-basket-sort.png" alt=""></button>
-            </div>
-
-        <div class="d-flex">
-            <h1 id="welcome"> </h1>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">#</button>
-        </div>
-
-        <div id="listBox"></div>
+<section class="main">
+    <div class="main__input d-flex justify-content-between mb-4">
+        <label for="grocey"></label>
+        <input class="search-opskrifter-input search-input input input-field" name="text" id="text" placeholder="Tilføj vare fx 6 æg">
+        <input type="hidden" id="saveIndex">
+        <button class="btn p-0 ms-2" id="btn__add">
+            <img class="icon__size" src="img/rediger.svg" alt="">
+        </button>
+        <button class="btn p-0 ms-2" style="display: none" id="btn__save">
+            <img class="icon__size" src="img/rediger.svg" alt="">
+        </button>
     </div>
 
-    <div class="d-flex justify-content-center mt-5">
-    <button type="button" class="btn btn-primary me-3">Gem liste</button>
-    <button type="button" class="btn btn-primary ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Ryd liste</button>
+    <div class="main__namelist d-flex mb-3">
+        <h1 class="mb-0" id="welcome"> </h1>
+        <button type="button" class="btn p-0 ps-2" data-bs-toggle="modal" data-bs-target="#exampleModalCenter1"><img class="icon__size" src="img/rediger.svg" alt=""></button>
+    </div>
+
+    <div class="main__list" id="listBox">
+        <!--Vare tilføjet til listen-->
+    </div>
+
+    <div class="main__list__btn d-flex justify-content-center mt-4">
+        <button type="button" class="secondary-btn me-3" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Ryd liste</button>
+        <button type="button" class="main-btn ms-3">Gem liste</button>
     </div>
 </section>
 

@@ -37,11 +37,57 @@
     </div>
 
     <div class="main__profile__content mt-4">
-        <div class="main__profile__favorites d-flex align-items-center mb-4">
+        <div class="main__profile__favorites d-flex align-items-center mb-3">
             <h1>Favorit opskrifter</h1>
             <a href="#" class="text-black">
                 <i class="far fa-edit fa-4xl ms-2"></i>
             </a>
+        </div>
+        <div class="items__list d-flex flex-wrap mb-4">
+            <div class="d-flex flex-row mt-3 mb-3">
+                <a class="col-5 text-decoration-none text-black" href="opskrift.php?opskId=5">
+                    <img src="img/bananpandekager.jpg" style="width: 100%" class="rounded-3">
+                </a>
+                <div class="col-7 ps-3 d-flex flex-column justify-content-between">
+                    <div class="">
+                        <h5 class="">Bananpandekager</h5>
+                        <div class="d-flex flex-wrap">
+                            <div class="list__items py-1 px-3 m-1 align-items-center">Hurtig</div>
+                            <div class="list__items py-1 px-3 m-1 align-items-center">Sukkerfri</div>
+                            <div class="list__items py-1 px-3 m-1 align-items-center">Banan</div>
+                            <div class="list__items py-1 px-3 m-1 align-items-center">Mel</div>
+                            <div class="list__items py-1 px-3 m-1 align-items-center">Æg</div>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <p class="me-2">15 min</p>
+                        <p class="d-flex"><img src="img/stjerne_gul.svg" style="height: 20px" alt="stjerne">4/5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="items__list d-flex flex-wrap">
+                <div class="d-flex flex-row mt-3 mb-3">
+                    <a class="col-5 text-decoration-none text-black" href="opskrift.php?opskId=3">
+                        <img src="img/is.jpg" style="width: 100%" class="rounded-3">
+                    </a>
+                    <div class="col-7 ps-3 d-flex flex-column justify-content-between">
+                        <div class="">
+                            <h5 class="">Is</h5>
+                            <div class="d-flex flex-wrap">
+                                <div class="list__items py-1 px-3 m-1 align-items-center">Hurtig</div>
+                                <div class="list__items py-1 px-3 m-1 align-items-center">Sukkerfri</div>
+                                <div class="list__items py-1 px-3 m-1 align-items-center">Banan</div>
+                                <div class="list__items py-1 px-3 m-1 align-items-center">Mel</div>
+                                <div class="list__items py-1 px-3 m-1 align-items-center">Æg</div>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <p class="me-2">15 min</p>
+                            <p class="d-flex"><img src="img/stjerne_gul.svg" style="height: 20px" alt="stjerne">4/5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="main__profile__lists d-flex align-items-center">
             <h1>Mine indkøbslister</h1>

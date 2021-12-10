@@ -93,7 +93,7 @@ $timemin = date("i", $timeFromDb).strip_tags(" min");
                 ?>
                 <div class="list__item py-1 px-3 m-1 d-flex align-items-center">
                     <p><?php echo $i->ingrNavn; ?></p>
-                    <img src="img/001-shopping-basket-sort.png" alt="kurv" class="ms-1 ">
+                    <img src="img/kurv_hvid.svg" alt="kurv" class="ms-1 ">
                 </div>
                 <?php
             }

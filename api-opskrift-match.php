@@ -15,11 +15,6 @@ INNER JOIN opskrift ON opskrift.opskId = conOpskId";
         $bind[":ingrId"] = $data["ingredientMatch"];
     }
 
-    if(!empty($data["nameSearch"])) {
-        $sql .= " AND opskNavn LIKE CONCAT('%', :opskNavn, '%')";
-        $bind[":opskNavn"] = $data["nameSearch"];
-    }
-
     $opskrift = $db->sql($sql,$bind);
     header ("HTTP/1.1 200 Access");
     echo json_encode($opskrift);

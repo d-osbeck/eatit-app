@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Vært: 127.0.0.1:3306
--- Genereringstid: 06. 12 2021 kl. 08:14:57
+-- Genereringstid: 12. 12 2021 kl. 21:35:23
 -- Serverversion: 5.7.31
 -- PHP-version: 7.3.21
 

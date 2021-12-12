@@ -11,11 +11,8 @@ export default class Opskrifter {
 
         this.nameSearch = this.filter.querySelector('.nameSearch');
 
-        if (this.nameSearch.value.length > 1) {
             this.nameSearch.addEventListener('input', () => this.renderRecipes());
-        } else {
             window.addEventListener('load', () => this.renderMatch());
-        }
 
     }
 

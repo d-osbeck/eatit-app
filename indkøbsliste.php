@@ -63,21 +63,6 @@
         </div>
     </div>
 </div>
-<!--Gem listen-->
-<div class="modal fade" id="exampleModalCenter4" role="document" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Vil du slette listen?</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-footer d-flex justify-content-center">
-                <button type="button" class="secondary-btn" data-bs-dismiss="modal">Nej</button>
-                <button type="button" class="main-btn" data-bs-dismiss="modal">Gem</button>
-            </div>
-        </div>
-    </div>
-</div>
 
 <section class="header pb-0">
     <?php include 'includes/header-bar.php'?>
@@ -110,12 +95,12 @@
     </div>
 
     <div class="main__list__btn d-flex justify-content-center mt-4">
-        <button type="button" class="secondary-btn me-3" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Ryd liste</button>
-        <button type="button" class="main-btn ms-3" data-bs-toggle="modal" data-bs-target="#exampleModalCenter4">Gem liste</button>
+        <button type="button" class="secondary-btn me-3 bg-transparent" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Ryd liste</button>
+        <button type="button" class="main-btn ms-3">Gem liste</button>
     </div>
 </section>
 
-<?php $page="opskrifter.php"?>
+<?php $page="indkøbsliste.php"?>
 
 <?php include 'nav.php' ?>
 

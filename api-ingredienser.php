@@ -16,7 +16,7 @@ if(isset($data["password"]) && $data["password"] == "Eatit") {
     $bind = [];
 
     if(!empty($data["ingrediensSearch"])) {
-        $sql .= " AND ingrNavn LIKE CONCAT('%', :ingrNavn, '%')";
+        $sql .= " AND ingredienser.ingrNavn LIKE CONCAT('%', :ingrNavn, '%')";
         $bind[":ingrNavn"] = $data["ingrediensSearch"];
     }
 

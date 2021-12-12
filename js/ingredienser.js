@@ -58,13 +58,12 @@ export default class Ingredienser {
         for(const item of ingredientJson){
             wrapper.innerHTML = `
             <div class="list__item py-1 px-3 m-1 d-flex align-items-center" data-id="${item.id}">
-                <p data-id="${item.id}">${item.name}</p>
+                <p data-name="${item.name}">${item.name}</p>
                 <i class="fas fa-times ms-1" data-id="${item.id}"></i>
             </div>
             `;
             wrapper.dataset.id = item.id;
         }
-
         this.items.appendChild(wrapper);
 
         window.localStorage.setItem('ingredients', JSON.stringify(ingredientJson));
@@ -89,6 +88,9 @@ export default class Ingredienser {
         window.localStorage.setItem('ingredients', JSON.stringify(ingredientsJson));
 
         this.render();
+
+        this.ingrediensSearch.value = '';
+        this.matchList.innerHTML = '';
     }
 
     async getData(){
@@ -106,7 +108,6 @@ export default class Ingredienser {
         const listItem = e.currentTarget;
 
         const ingredientMatchId = e.target.getAttribute('data-id');
-        console.log(ingredientMatchId)
 
         const ingredients = window.localStorage.getItem('ingredients');
         const ingredientsJson = (ingredients) ? JSON.parse(ingredients) : [];
@@ -128,17 +129,36 @@ export default class Ingredienser {
 
         this.listItem = [];
         this.items.querySelectorAll('.list__item').forEach((list__item) => {
-            this.listItem.push(list__item.outerHTML);
-            console.log(list__item);
+            const ingrediensObject = {
+                id: list__item.getAttribute("data-id"),
+                name: list__item.firstElementChild.getAttribute("data-name")
+            }
+            this.listItem.push(ingrediensObject);
+            console.log(ingrediensObject);
         });
 
         window.localStorage.setItem('ingredients', JSON.stringify(this.listItem));
     }
 
     loadFromLocalStorage(){
-        let listItems = '';
-        this.listItemElement.forEach(item => listItems += item);
-        this.items.innerHTML = listItems;
+        const ingredients = window.localStorage.getItem('ingredients');
+        const ingredientJson = (ingredients) ? JSON.parse(ingredients) : [];
+
+        for(const item of ingredientJson){
+            const wrapper = document.createElement('div');
+            wrapper.classList.add('items__wrapper', 'd-flex', 'flex-wrap');
+
+            wrapper.innerHTML = `
+            <div class="list__item py-1 px-3 m-1 d-flex align-items-center" data-id="${item.id}">
+                <p data-name="${item.name}">${item.name}</p>
+                <i class="fas fa-times ms-1" data-id="${item.id}"></i>
+            </div>
+            `;
+            wrapper.dataset.id = item.id;
+            console.log(item);
+            this.items.appendChild(wrapper);
+        }
+
         this.items.querySelectorAll('.list__item').forEach(list__item => {
             list__item.addEventListener('click', (e) => this.deleteItem(e));
         })

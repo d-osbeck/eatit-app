@@ -112,6 +112,18 @@ section {
   width:35px;
 }
 
+.card__img {
+  max-width: 10rem;
+  border-radius: 15px;
+}
+
+.list__item {
+  background-color: #68BC95;
+  color: white;
+  font-size: .875rem;
+  border-radius: 5px;
+}
+
 /* Onboarding */
 
 .hero {

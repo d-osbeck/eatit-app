@@ -13,9 +13,9 @@
             </a>
         </li>
         <li class="nav__item list-unstyled">
-            <a href="favoritter.php" class="nav__link <?php echo ($page == "favoritter.php" ? "active" : "")?>">
-                <img src="img/hjerte.svg" class="global__icon mb-2" alt="icon heart">
-                <p class="nav__text">Favoritter</p>
+            <a href="indkøbsliste.php" class="nav__link <?php echo ($page == "indkøbsliste.php" ? "active" : "")?>">
+                <img src="img/indkøbskurv.svg" class="global__icon mb-2" alt="icon shopping list">
+                <p class="nav__text">Indkøbskurv</p>
             </a>
         </li>
         <li class="nav__item list-unstyled">

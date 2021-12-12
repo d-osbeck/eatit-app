@@ -40,6 +40,7 @@
     import Opskrifter from "./js/opskrifter.js";
     const opskrifter = new Opskrifter();
 </script>
+
 <script src="https://kit.fontawesome.com/d7a71e7a7e.js" crossorigin="anonymous"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>

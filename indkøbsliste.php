@@ -95,12 +95,12 @@
     </div>
 
     <div class="main__list__btn d-flex justify-content-center mt-4">
-        <button type="button" class="secondary-btn me-3" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Ryd liste</button>
+        <button type="button" class="secondary-btn me-3 bg-transparent" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Ryd liste</button>
         <button type="button" class="main-btn ms-3">Gem liste</button>
     </div>
 </section>
 
-<?php $page="opskrifter.php"?>
+<?php $page="indkøbsliste.php"?>
 
 <?php include 'nav.php' ?>
 

@@ -95,12 +95,12 @@
         </div>
 
         <div class="main__content__confirm d-flex justify-content-center">
-            <a class="text-decoration-none" href="#">
+            <a class="text-decoration-none" href="#" class="clear__button">
                 <div class="secondary-btn d-flex justify-content-center mx-2 mt-4">
                     <p class="main-btn__title">Start forfra</p>
                 </div>
             </a>
-            <a class="text-decoration-none" href="#">
+            <a class="text-decoration-none" href="opskrifter.php">
                 <div class="main-btn d-flex justify-content-center mx-2 mt-4">
                     <p class="main-btn__title">Fortsæt</p>
                 </div>

@@ -37,16 +37,37 @@
     </div>
 
     <div class="main__profile__content mt-4">
-        <div class="main__profile__favorites d-flex align-items-center mb-4">
-            <h1>Favorit opskrifter</h1>
-            <a href="#" class="text-black">
-                <i class="far fa-edit fa-4xl ms-2"></i>
-            </a>
+        <div class="main__profile__favorites mb-4">
+            <div class="main__profile__favorites__header d-flex align-items-center">
+                <h1>Favorit opskrifter</h1>
+                <a href="#" class="text-black">
+                    <img src="img/rediger.svg" class="global__icon mb-2 ms-2" alt="icon edit">
+                </a>
+            </div>
+            <!--
+            <div class="main__favorite card__container my-4">
+                <a href="" class="text-decoration-none text-body d-flex g-2">
+                    <img src="img/bananpandekager.jpg" class="card__img col-7 me-2">
+                    <div class="card__content">
+                        <h4 class="card__title">Bananpandekager</h4>
+                        <div class="card__ingredients d-flex align-items-center flex-wrap">
+                            <div class="list__item py-1 px-3 me-1 d-flex align-items-center">
+                                <p>Mel</p>
+                            </div>
+                        </div>
+
+                        <div class="card__info d-flex justify-content-between align-items-end flex-grow-1 mt-3">
+                            <p>Hej</p>
+                            <p>Rating</p>
+                        </div>
+                    </div>
+                </a>
+            </div>-->
         </div>
         <div class="main__profile__lists d-flex align-items-center">
             <h1>Mine indkøbslister</h1>
             <a href="#" class="text-black">
-                <i class="far fa-edit fa-4xl ms-2"></i>
+                <img src="img/rediger.svg" class="global__icon mb-2 ms-2" alt="icon edit">
             </a>
         </div>
     </div>
@@ -57,7 +78,6 @@
 <?php include 'nav.php'?>
 
 <script src="js/main.js"></script>
-<script src="js/showHiddenInput.js"></script>
 
 <script src="https://kit.fontawesome.com/d7a71e7a7e.js" crossorigin="anonymous"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

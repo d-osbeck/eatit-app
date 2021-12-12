@@ -28,11 +28,6 @@
 
 <section class="main">
     <div class="main__items">
-        <a href="#" class="main-btn mx-4 mt-0 mb-2 d-flex align-items-center justify-content-between text-decoration-none">
-            <p class="main__item__title fw-normal">Indkøbsliste</p>
-            <i class="fas fa-arrow-right"></i>
-        </a>
-
         <a href="#" class="main-btn mx-4 my-2  d-flex align-items-center justify-content-between text-decoration-none">
             <p class="main__item__title fw-normal">Blog</p>
             <i class="fas fa-arrow-right"></i>
@@ -70,7 +65,6 @@
 <?php include 'nav.php'?>
 
 <script src="js/main.js"></script>
-<script src="js/showHiddenInput.js"></script>
 
 <script src="https://kit.fontawesome.com/d7a71e7a7e.js" crossorigin="anonymous"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

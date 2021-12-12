@@ -27,7 +27,7 @@
     </div>
 </section>
 
-<section class="main">
+<section class="main container">
     <div class="main__profile__header container d-flex flex-column justify-content-center align-items-center">
         <div class="main__profile__pic mb-2"></div>
         <h1 class="main__profile__title mb-3">Astrid Andersen</h1>
@@ -40,7 +40,7 @@
         <div class="main__favorites__titel d-flex align-items-center mb-3">
             <h1>Favorit opskrifter</h1>
             <a href="#" class="text-black">
-                <img src="img/rediger.svg" alt="rediger mine indkøbslister" style="width: 25px; height: 25px;" class="titel--icon ms-2">
+                <img src="img/rediger.svg" alt="rediger mine indkøbslister" class="titel--icon ms-2">
             </a>
         </div>
         <div class="main__favorites__item items__list d-flex flex-wrap">
@@ -95,7 +95,7 @@
         <div class="main__groceylist__titel d-flex align-items-center mb-3">
             <h1>Mine indkøbslister</h1>
             <a href="#" class="text-black">
-                <img src="img/rediger.svg" alt="rediger mine indkøbslister" style="width: 25px; height: 25px;" class="titel--icon ms-2">
+                <img src="img/rediger.svg" alt="rediger mine indkøbslister" class="titel--icon ms-2">
             </a>
         </div>
         <div class="main__groceylist__item items__list d-flex flex-wrap">

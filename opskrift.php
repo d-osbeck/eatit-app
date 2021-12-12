@@ -41,7 +41,9 @@ $timemin = date("i", $timeFromDb).strip_tags(" min");
 
     <div class="header__title row">
         <h1 class="col-10"><?php echo $opskrift->opskNavn; ?></h1>
-        <img src="img/hjerte.svg" alt="hjerte tilføj til favorit" id="favorit" class="col-2">
+        <div class="col-2 d-flex justify-content-end">
+        <img src="img/hjerte.svg" alt="hjerte tilføj til favorit" id="favorit" class="py-auto" style="max-height: 40px;">
+        </div>
     </div>
 </section>
 
@@ -85,7 +87,7 @@ $timemin = date("i", $timeFromDb).strip_tags(" min");
         </div>
     </div>
 
-        <div class="my-4">
+    <div class="my-4">
         <h4 class="mb-3">Ingredienser</h4>
         <div class="d-flex flex-wrap">
             <?php

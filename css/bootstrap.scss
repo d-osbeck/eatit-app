@@ -9,6 +9,15 @@ $custom-colors:(
   "body": #707070,
 );
 
+$custom-container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1320px
+);
+
+$container-max-widths: map-merge($container-max-widths, $custom-container-max-widths);
 $theme-colors: map-merge($theme-colors, $custom-colors);
 $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
 $utilities-colors: map-merge($utilities-colors, $theme-colors-rgb);

@@ -37,7 +37,13 @@ export default class Opskrifter {
                     <div class="col-7 ps-3 d-flex flex-column justify-content-between">
                         <div class="">
                             <h5 class="">${item.opskNavn}</h5>
-                            <div class="">"Her skal ingredienser være"</div>
+                            <div class="d-flex flex-wrap">
+                                <div class="list__items py-1 px-3 m-1 align-items-center">Hurtig</div>
+                                <div class="list__items py-1 px-3 m-1 align-items-center">Sukkerfri</div>
+                                <div class="list__items py-1 px-3 m-1 align-items-center">Banan</div>
+                                <div class="list__items py-1 px-3 m-1 align-items-center">Mel</div>
+                                <div class="list__items py-1 px-3 m-1 align-items-center">Æg</div>
+                            </div>
                         </div>
                         <div class="d-flex">
                             <p class="me-2">${item.opskTidText}</p>

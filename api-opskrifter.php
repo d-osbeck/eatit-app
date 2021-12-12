@@ -14,6 +14,8 @@ if(isset($data["password"]) && $data["password"] == "Eatit") {
         $bind[":opskNavn"] = $data["nameSearch"];
     }
 
+    $sql .= " ORDER BY opskNavn ASC";
+
     $opskrift = $db->sql($sql,$bind);
     header ("HTTP/1.1 200 Access");
     echo json_encode($opskrift);

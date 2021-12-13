@@ -28,7 +28,7 @@
 
 <section class="konto">
 
-    <div class="konto__mail d-flex justify-content-between mb-4">
+    <div class="konto__mail container d-flex justify-content-between mb-4">
         <div class="konto__mail__display">
             <h2 class="mb-1">Mail</h2>
             <p>mail@email.com</p>
@@ -36,7 +36,7 @@
         <img src="img/rediger.svg" alt="rediger mail" class="konto__edit__icon my-auto">
     </div>
 
-    <div class="konto__password d-flex justify-content-between mb-4">
+    <div class="konto__password container d-flex justify-content-between mb-4">
         <div class="konto__password__display">
             <h2 class="mb-1">Kode</h2>
             <p>********</p>
@@ -44,7 +44,7 @@
         <img src="img/rediger.svg" alt="rediger mail" class="konto__edit__icon my-auto">
     </div>
 
-    <div class="konto__name d-flex justify-content-between mb-4">
+    <div class="konto__name container d-flex justify-content-between mb-4">
         <div class="konto__name__display">
             <h2 class="mb-1">Navn</h2>
             <p>Astrid Andersen</p>
@@ -52,14 +52,14 @@
         <img src="img/rediger.svg" alt="rediger mail" class="konto__edit__icon my-auto">
     </div>
 
-    <div class="konto__picture d-flex justify-content-between mb-4">
+    <div class="konto__picture container d-flex justify-content-between mb-4">
         <div class="konto__picture__display">
             <h2 class="mb-1">Profil billede</h2>
         </div>
         <img src="img/rediger.svg" alt="rediger mail" class="konto__edit__icon my-auto">
     </div>
 
-    <div class="konto__language mb-3">
+    <div class="konto__language container mb-3">
         <div class="konto__language__titel">
             <h2 class="mb-3">Sprog</h2>
         </div>
@@ -75,7 +75,7 @@
 </section>
 
 <section class="suppprt">
-        <div class="support__content">
+        <div class="support__content container ">
             <h2 class="support__content__titel mb-3">Support</h2>
             <p class="support__content__text mb-4">
             Hvis du har problemer eller spørgsmål med appen kan du kontakt support.
@@ -85,13 +85,11 @@
             Ellers kan support kontaktes via mail døgnet rundt på <a href="mailto:support@eatit.dk">support@eatit.dk</a>
             </p>
         </div>
-        <div class="support__content__cta d-flex justify-content-center mb-4">
-            <button class="btn main-btn me-3">Ring</button>
-            <button class="btn main-btn ms-3">Mail</button>
-        </div>
 </section>
+
 <?php $page="profil.php"?>
 <?php include 'nav.php' ?>
+
 <script src="js/main.js"></script>
 <script src="https://kit.fontawesome.com/d7a71e7a7e.js" crossorigin="anonymous"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

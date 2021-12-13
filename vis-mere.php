@@ -22,13 +22,13 @@
     <?php include 'includes/header-bar.php'?>
 
     <div class="header__title d-flex justify-content-center">
-        <h1>Mere</h1>
+        <h1>Indkøbsliste</h1>
     </div>
 </section>
 
 <section class="main">
     <div class="main__items">
-        <a href="https://davidosbeck.dk/eatit-website/" target="_blank" class="main-btn mx-4 my-2 d-flex align-items-center justify-content-between text-decoration-none">
+        <a href="https://davidosbeck.dk/eatit-website" target="_blank" class="main-btn mx-4 my-2 d-flex align-items-center justify-content-between text-decoration-none">
             <p class="main__item__title fw-normal">Blog</p>
             <i class="fas fa-arrow-right"></i>
         </a>
@@ -62,7 +62,7 @@
 
 <?php $page="vis-mere.php"?>
 
-<?php include 'nav.php'?>
+<?php include 'nav.php' ?>
 
 <script src="js/main.js"></script>
 

@@ -21,14 +21,14 @@
 <section class="header pb-0">
     <?php include 'includes/header-bar.php'?>
 
-    <div class="header__title d-flex justify-content-center">
+    <div class="header__title container d-flex justify-content-center mb-4">
         <h1>Cookie- og privatlivspolitik hos Eatit</h1>
     </div>
 </section>
 
 <section class="main">
 
-    <div class="main__about__concept mb-4">
+    <div class="main__about__concept container mb-5">
         <h2 class="mb-2">Introduktion</h2>
         <p>
             Når du besøger vores website bliver der indsamlet oplysninger om dig, som bliver brugt til at tilpasse og forbedre vores indhold og til at skabe mere værdi hos de annoncer, der vises på siden.
@@ -37,7 +37,7 @@
         </p>
     </div>
 
-    <div class="main__about__goals mb-4">
+    <div class="main__about__goals container mb-5">
         <h2 class="mb-2">Cookies</h2>
         <p>
             Hjemmesiden anvender "cookies", som er en tekstfil, der gemmes på din computer, mobil el. tilsvarende med formålet at genkende den, huske indstillinger, udføre statistik og målrette annoncer.
@@ -49,11 +49,11 @@
     </div>
 </section>
 <section>
-    <div class="main__mb-4">
+    <div class="main container mb-5">
         <h1 class="mb-3">Personoplysninger</h1>
     </div>
 
-    <div class="main__about__goals mb-4">
+    <div class="main__about__goals container mb-5">
         <h2 class="mb-2">Generelt</h2>
         <p>
             Personoplysninger er alle former for informationer, som i et eller andet omfang kan henføres til dig.
@@ -66,7 +66,7 @@
         </p>
     </div>
 
-    <div class="main__about__goals mb-4">
+    <div class="main__about__goals container mb-5">
         <h2 class="mb-2">Sikkerhed</h2>
         <p>
             Vi behandler dine personoplysninger sikkert og fortroligt i overensstemmelse med gældende lovgivning, herunder persondataforordningen og databeskyttelsesloven.
@@ -76,7 +76,7 @@
         </p>
     </div>
 
-    <div class="main__about__goals mb-4">
+    <div class="main__about__goals container mb-5">
         <h2 class="mb-2">Formål</h2>
         <p>
             Oplysningerne bruges til at identificere dig som bruger og vise dig de annoncer, som vil have mest relevans for dig, at registrere dine køb og betalinger, samt at kunne levere dig de services, du har efterspurgt, som fx at modtage nyhedsbreve.
@@ -84,7 +84,7 @@
         </p>
     </div>
 
-    <div class="main__about__goals mb-4">
+    <div class="main__about__goals container mb-5">
         <h2 class="mb-2">Periode for opbevaring</h2>
         <p>
             Vi opbevarer oplysninger i det tidsrum, som er tilladt i henhold til lovgivningen, og vi sletter dem, når de ikke længere er nødvendige eller relevante.
@@ -93,7 +93,7 @@
         </p>
     </div>
 
-    <div class="main__about__goals mb-4">
+    <div class="main__about__goals container mb-5">
         <h2 class="mb-2">Videregivelse af oplysninger</h2>
         <p>
             Data om din brug af websitet, hvilke annoncer du modtager og evt. klikker på, geografisk placering, køn og alderssegment m.v. videregives til tredjeparter i det omfang oplysningerne er kendt, og såfremt vi benytter os af tredjeparter.
@@ -106,7 +106,7 @@
         </p>
     </div>
 
-    <div class="main__about__goals mb-4">
+    <div class="main__about__goals container mb-5">
         <h2 class="mb-2">Indsigt og klager</h2>
         <p>
             Du har ret til at få oplyst, hvilke personoplysninger, vi behandler om dig i et almindeligt format (dataportabilitet).
@@ -119,7 +119,7 @@
         </p>
     </div>
 
-    <div class="main__about__goals mb-4">
+    <div class="main__about__goals container mb-5">
         <h2 class="mb-2">Udgiver</h2>
         <p>
             Websitet ejes og publiceres af:
@@ -139,10 +139,10 @@
 </section>
 
 <?php $page="profil.php"?>
-<?php include 'nav.php'?>
+<?php include 'nav.php' ?>
 
 <script src="js/main.js"></script>
-<script src="js/showHiddenInput.js"></script>
+
 <script src="https://kit.fontawesome.com/d7a71e7a7e.js" crossorigin="anonymous"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>

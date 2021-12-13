@@ -8,13 +8,17 @@
 }
 
 .list__items {
-  background-color: #68BC95;
+  background-color: #55795A;
   color: white;
-  font-size: 10px;
+  font-size: .875rem;
   border-radius: 5px;
 }
 
 .titel--icon {
   height: 25px;
   width: 25px;
+}
+
+.opskrift__info p {
+  font-weight: 500;
 }

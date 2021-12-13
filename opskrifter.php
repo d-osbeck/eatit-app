@@ -30,12 +30,58 @@
         </div>
     </div>
 
-    <div class="items__list d-flex flex-wrap">
+    <div class="main__content__categories container my-4">
+        <h1 class="mb-3">Kategorier</h1>
+        <div class="row mb-3">
+            <div class="col-3 d-flex flex-column justify-content-center align-items-center category-icon">
+                <img src="img/ur.svg" class="global__icon mb-2" alt="icon clock">
+                <p>Hurtigt</p>
+            </div>
+            <div class="col-3 d-flex flex-column justify-content-center align-items-center category-icon">
+                <img src="img/gris.svg" class="global__icon mb-2" alt="icon pig">
+                <p>Kød</p>
+            </div>
+            <div class="col-3 d-flex flex-column justify-content-center align-items-center category-icon">
+                <img src="img/gulerod.svg" class="global__icon mb-2" alt="icon carrot">
+                <p>Grøntsager</p>
+            </div>
+            <div class="col-3 d-flex flex-column justify-content-center align-items-center category-icon">
+                <img src="img/fisk.svg" class="global__icon mb-2" alt="icon fish">
+                <p>Fisk</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3 d-flex flex-column justify-content-center align-items-center category-icon">
+                <img src="img/blad.svg" class="global__icon mb-2" alt="icon vegan">
+                <p>Vegansk</p>
+            </div>
+            <div class="col-3 d-flex flex-column justify-content-center align-items-center category-icon">
+                <img src="img/glutenfri.svg" class="global__icon mb-2" alt="icon gluten free">
+                <p>Glutenfri</p>
+            </div>
+            <div class="col-3 d-flex flex-column justify-content-center align-items-center category-icon">
+                <img src="img/ko.svg" class="global__icon mb-2" alt="icon lactose free">
+                <p>Laktosefri</p>
+            </div>
+            <div class="col-3 d-flex flex-column justify-content-center align-items-center category-icon">
+                <img src="img/sukkerfri.svg" class="global__icon mb-2" alt="icon sugar free">
+                <p>Sukkerfri</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="items__list container d-flex flex-wrap">
         <!-- Her vises opskrifterne -->
     </div>
 </section>
+
+
 <?php $page="opskrifter.php"?>
+
 <?php include 'nav.php' ?>
+
+<script src="js/main.js"></script>
 <script type="module">
     import Opskrifter from "./js/opskrifter.js";
     const opskrifter = new Opskrifter();

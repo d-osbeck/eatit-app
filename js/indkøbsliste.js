@@ -122,7 +122,7 @@ if(name) {
 
 // Tilføj navn
 
-let inputName = document.querySelector('.inputname');
+let inputName = document.querySelector('.list__name__field');
 let nameSpan = document.querySelector('.name');
 
 function getName (){

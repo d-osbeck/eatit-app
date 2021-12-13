@@ -1,4 +1,4 @@
-<div class="header__bar d-flex justify-content-between align-items-center p-3 py-4">
+<div class="header__bar container bg-background fixed-top d-flex justify-content-between align-items-center p-4">
     <div class="header__arrow">
         <a id="back-link">
             <i class="fas fa-chevron-left fa-2x" style="color: #212529;"></i>

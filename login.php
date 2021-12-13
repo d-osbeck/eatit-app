@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
+<body class="p-0 m-0">
 
 <section class="header pb-0">
     <div class="header__bar d-flex justify-content-start p-3 pt-4 pb-2">

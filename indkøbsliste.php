@@ -37,12 +37,12 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content rounded-3">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Start spil</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Nyt navn</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p class="mb-1">Dit navn:</p>
-                <input class="inputname bg-secondary rounded-3 mb-4" placeholder="Anders">
+                <p class="mb-1">Liste navn:</p>
+                <input class="input-field list__name__field bg-transparent rounded-3 mb-4 w-100" placeholder="Navn">
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger rounded-3 border-black" data-bs-dismiss="modal">Luk</button>
@@ -60,8 +60,8 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-footer d-flex justify-content-center">
-                <button type="button" class="secondary-btn " data-bs-dismiss="modal">Nej</button>
-                <button type="button" id="btn__delete" class="main-btn" data-bs-dismiss="modal">Ja</button>
+                <button type="button" class="secondary-btn bg-transparent px-5 me-2" data-bs-dismiss="modal">Nej</button>
+                <button type="button" id="btn__delete" class="main-btn px-5 ms-2" data-bs-dismiss="modal">Ja</button>
             </div>
         </div>
     </div>
@@ -75,8 +75,8 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-footer d-flex justify-content-center">
-                <button type="button" class="secondary-btn" data-bs-dismiss="modal">Nej</button>
-                <button type="button" id="btn__removeall" class="main-btn" data-bs-dismiss="modal">Ja</button>
+                <button type="button" class="secondary-btn bg-transparent px-5 me-2" data-bs-dismiss="modal">Nej</button>
+                <button type="button" id="btn__removeall" class="main-btn px-5 ms-2" data-bs-dismiss="modal">Ja</button>
             </div>
         </div>
     </div>
@@ -86,41 +86,43 @@
     <?php include 'includes/header-bar.php'?>
 
     <div class="header__title d-flex justify-content-center">
-        <h1>Indkøbsliste</h1>
+        <h1 class="m-0">Indkøbsliste</h1>
     </div>
 </section>
 
 <section class="main">
-    <div class="main__input d-flex justify-content-between mb-4">
-        <label for="grocey"></label>
+    <div class="main__input container d-flex justify-content-between mb-4">
+        <label for="text"></label>
         <input class="search-opskrifter-input search-input input input-field" name="text" id="text" placeholder="Tilføj vare fx 6 æg">
         <input type="hidden" id="saveIndex">
-        <button class="btn p-0 ms-2" id="btn__add">
-            <img class="icon__size" src="img/rediger.svg" alt="">
+        <button class="main-btn p-0 ms-2" id="btn__add">
+            <i class="fas fa-plus p-3"></i>
         </button>
         <button class="btn p-0 ms-2" style="display: none" id="btn__save">
             <img class="icon__size" src="img/rediger.svg" alt="">
         </button>
     </div>
 
-    <div class="main__namelist d-flex mb-3">
+    <div class="main__namelist container d-flex mb-3">
         <h1 class="mb-0 name" id="name">Liste</h1>
         <button type="button" class="btn p-0 ps-2" data-bs-toggle="modal" data-bs-target="#exampleModalCenter1"><img class="icon__size" src="img/rediger.svg" alt=""></button>
     </div>
 
-    <div class="main__list" id="listBox">
+    <div class="main__list container" id="listBox">
         <!--Vare tilføjet til listen-->
     </div>
 
     <div class="main__list__btn d-flex justify-content-center mt-4">
-        <button type="button" class="secondary-btn me-3 bg-transparent" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Ryd liste</button>
-        <button type="button" class="main-btn ms-3">Gem liste</button>
+        <button type="button" class="secondary-btn px-4 me-2 bg-transparent" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Ryd liste</button>
+        <button type="button" class="main-btn px-4 ms-2">Gem liste</button>
     </div>
 </section>
 
 <?php $page="indkøbsliste.php"?>
 
 <?php include 'nav.php' ?>
+
+<script src="js/main.js"></script>
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://kit.fontawesome.com/d7a71e7a7e.js" crossorigin="anonymous"></script>

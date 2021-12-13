@@ -27,11 +27,11 @@
 </section>
 
 <section class="main__about">
-    <div class="main__about__image mb-4">
-    <img src="img/bananpandekager.jpg" alt="billede af " class="rounded-3 vw-100">
+    <div class="main__about__image container mb-5">
+    <img src="img/bananpandekager.jpeg" alt="billede af " class="rounded-3 vw-100">
     </div>
 
-    <div class="main__about__concept mb-4">
+    <div class="main__about__concept container mb-5">
         <h2 class="mb-2">Eat it - det nemme valg!</h2>
         <p>
             Er mere end bare en app! Det er hjælp til dig, der gerne vil spare lidt på madbudgettet og samtidig gøre noget godt for miljøet.
@@ -40,7 +40,7 @@
         </p>
     </div>
 
-    <div class="main__about__goals mb-4">
+    <div class="main__about__goals container mb-5">
         <h2 class="mb-2">Nemt, hurtigt og lige til</h2>
         <p>
             Tjek køleskabet, skabe og fryseren og se hvilke nemme og lækre retter du kan fremtrylle hjemme i dit eget køkken.
@@ -51,17 +51,17 @@
         </p>
     </div>
 
-    <div class="main__about__btn d-flex justify-content-center mt-4">
+    <div class="main__about__btn container d-flex justify-content-center mt-5">
         <a href="ingredienser.php" class="btn main-btn vw-100 mb-3">Kom igang</a>
     </div>
 
 </section>
 
 <?php $page="profil.php"?>
-<?php include 'nav.php'?>
+<?php include 'nav.php' ?>
 
 <script src="js/main.js"></script>
-<script src="js/showHiddenInput.js"></script>
+
 <script src="https://kit.fontawesome.com/d7a71e7a7e.js" crossorigin="anonymous"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>

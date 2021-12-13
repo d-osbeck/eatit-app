@@ -89,12 +89,7 @@
             </div>
         </div>
 
-        <div class="main__content__popular">
-            <div class="main__content__title mt-4">
-            </div>
-        </div>
-
-        <div class="main__content__confirm d-flex justify-content-center">
+        <div class="main__content__confirm d-flex justify-content-center py-4">
             <a class="text-decoration-none" href="#" class="clear__button">
                 <div class="secondary-btn d-flex justify-content-center mx-2 mt-4">
                     <p class="main-btn__title">Start forfra</p>
@@ -112,7 +107,7 @@
 
 <?php $page="ingredienser.php"?>
 
-<?php include 'nav.php'?>
+<?php include 'nav.php' ?>
 
 <script src="js/main.js"></script>
 <script type="module">

@@ -32,13 +32,27 @@
     </div>
 
     <div class="main__about__concept mb-4">
-        <h2 class="mb-2">Konceptet</h2>
-        <p>"tekst om konceptet"</p>
+        <h2 class="mb-2">Eat it - det nemme valg!</h2>
+        <p>
+            Er mere end bare en app! Det er hjælp til dig, der gerne vil spare lidt på madbudgettet og samtidig gøre noget godt for miljøet.
+            <br><br>
+            Du indtaster blot de ingredienser du allerede har i hjemmet og straks kommer app´en med lækre og nemme løsninger.
+        </p>
     </div>
 
     <div class="main__about__goals mb-4">
-        <h2 class="mb-2">Vores mål</h2>
-        <p>"tekst om målene"</p>
+        <h2 class="mb-2">Nemt, hurtigt og lige til</h2>
+        <p>
+            Tjek køleskabet, skabe og fryseren og se hvilke nemme og lækre retter du kan fremtrylle hjemme i dit eget køkken.
+            <br><br>
+            Samtidig undgår du at fodre skraldespanden med penge, du i stedet kunne bruge på lidt lækkert til weekenden, tage en tur i biografen eller komme ud at rejse for.
+            <br><br>
+            De ingredienser du mangler, sender du med et klik videre til din indkøbsseddel, der gør det nemt for dig at købe de manglende ingredienser med hjem efter en travl dag.
+        </p>
+    </div>
+
+    <div class="main__about__btn d-flex justify-content-center mt-4">
+        <a href="ingredienser.php" class="btn main-btn vw-100 mb-3">Kom igang</a>
     </div>
 
 </section>

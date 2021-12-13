@@ -28,29 +28,29 @@
 
 <section class="main">
     <div class="main__items">
-        <a href="#" class="main-btn mx-4 my-2  d-flex align-items-center justify-content-between text-decoration-none">
+        <a href="https://davidosbeck.dk/eatit-website/" target="_blank" class="main-btn mx-4 my-2 d-flex align-items-center justify-content-between text-decoration-none">
             <p class="main__item__title fw-normal">Blog</p>
             <i class="fas fa-arrow-right"></i>
         </a>
 
-        <a href="#" class="main-btn mx-4 my-2 d-flex align-items-center justify-content-between text-decoration-none">
+        <a href="kontooplysninger.php" class="main-btn mx-4 my-2 d-flex align-items-center justify-content-between text-decoration-none">
             <p class="main__item__title fw-normal">Kontooplysninger</p>
             <i class="fas fa-arrow-right"></i>
         </a>
 
-        <a href="#" class="main-btn mx-4 my-2 d-flex align-items-center justify-content-between text-decoration-none">
+        <a href="om-appen.php" class="main-btn mx-4 my-2 d-flex align-items-center justify-content-between text-decoration-none">
             <p class="main__item__title fw-normal">Læs om appen</p>
             <i class="fas fa-arrow-right"></i>
         </a>
 
-        <a href="#" class="secondary-btn mx-4 my-2 d-flex align-items-center justify-content-between text-decoration-none">
+        <a href="privatpolitik.php" class="secondary-btn mx-4 my-2 d-flex align-items-center justify-content-between text-decoration-none">
             <p class="main__item__title fw-normal">Cookie- & Privatlivspolitik</p>
             <i class="fas fa-arrow-right"></i>
         </a>
     </div>
 
     <div class="main__support container pt-3">
-        <p class="main__support__msg text-center">Har du brug for support, så kontakt vores supportcenter på <a href="">support@eatit.dk</a></p>
+        <p class="main__support__msg text-center">Har du brug for support, så kontakt vores supportcenter på <a href="mailto:support@eatit.dk">support@eatit.dk</a></p>
     </div>
 
     <a class="text-decoration-none" href="index.php">

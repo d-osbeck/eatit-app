@@ -22,7 +22,7 @@
     <?php include 'includes/header-bar.php'?>
 
     <div class="header__title d-flex justify-content-center mb-4">
-        <h1>Konto Oplysninger</h1>
+        <h1>Kontooplysninger</h1>
     </div>
 </section>
 
@@ -61,7 +61,7 @@
 
     <div class="konto__language mb-3">
         <div class="konto__language__titel">
-            <h2 class="mb-3">Sporg</h2>
+            <h2 class="mb-3">Sprog</h2>
         </div>
         <div class="konto__language__slider d-flex">
             <p class="my-auto me-4">Dansk</p>
@@ -82,7 +82,7 @@
             <br><br>
             Telefontider er mellem 9-15 man-tors og kan kontaktes på telefon <a href="tel:+45 98 76 54 32">+45 98 76 54 32</a>
             <br><br>
-            Ellers kan support kontaktes via mail døgnet rundt på <a href="mailto:eatit@mail.com">eatit@mail.com</a>
+            Ellers kan support kontaktes via mail døgnet rundt på <a href="mailto:support@eatit.dk">support@eatit.dk</a>
             </p>
         </div>
         <div class="support__content__cta d-flex justify-content-center mb-4">

@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<!--Navn på indkøbslisten-->
+<!--Navn på indkøbslisten
 <div class="modal fade" id="exampleModalCenter1" role="document" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content rounded-3">
@@ -29,6 +29,24 @@
                         <button type="submit" value="submit" class="main-btn ms-3 comfirm" data-bs-dismiss="modal">Ok</button>
                     </div>
                 </form>
+            </div>
+        </div>
+    </div>
+</div>-->
+<div class="modal fade" id="exampleModalCenter1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-3">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Start spil</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="mb-1">Dit navn:</p>
+                <input class="inputname bg-secondary rounded-3 mb-4" placeholder="Anders">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger rounded-3 border-black" data-bs-dismiss="modal">Luk</button>
+                <button type="button" class="start makelist rounded-3 border-black btn btn-primary" data-bs-dismiss="modal">Start</button>
             </div>
         </div>
     </div>
@@ -86,7 +104,7 @@
     </div>
 
     <div class="main__namelist d-flex mb-3">
-        <h1 class="mb-0" id="welcome"> </h1>
+        <h1 class="mb-0 name" id="name">Liste</h1>
         <button type="button" class="btn p-0 ps-2" data-bs-toggle="modal" data-bs-target="#exampleModalCenter1"><img class="icon__size" src="img/rediger.svg" alt=""></button>
     </div>
 

@@ -11,57 +11,20 @@ export default class Opskrifter {
 
         this.nameSearch = this.filter.querySelector('.nameSearch');
 
-            this.nameSearch.addEventListener('input', () => this.renderRecipes());
-            window.addEventListener('load', () => this.renderMatch());
+        this.nameSearch.addEventListener('input', () => this.renderRecipes());
+        window.addEventListener('load', () => this.renderMatch());
 
     }
 
     async renderRecipes() {
         const data = await this.getDataRecipes();
-
-        const row = document.createElement('div');
-        row.classList.add('row');
-
-        for(const item of data){
-            const col = document.createElement('div');
-            col.classList.add('col-12');
-
-            col.innerHTML = `
-                <div class="d-flex flex-row mt-3 mb-3">
-                    <a class="col-5 text-decoration-none text-black" href="opskrift.php?opskId=${item.opskId}">
-                        <img src="img/${item.opskBillede}" style="width: 100%" class="rounded-3">
-                    </a>
-                    <div class="col-7 ps-3 d-flex flex-column justify-content-between">
-                        <div class="">
-                            <h5 class="">${item.opskNavn}</h5>
-                            <div class="d-flex flex-wrap">
-                                <div class="list__items py-1 px-3 m-1 align-items-center">Hurtig</div>
-                                <div class="list__items py-1 px-3 m-1 align-items-center">Sukkerfri</div>
-                                <div class="list__items py-1 px-3 m-1 align-items-center">Banan</div>
-                                <div class="list__items py-1 px-3 m-1 align-items-center">Mel</div>
-                                <div class="list__items py-1 px-3 m-1 align-items-center">Æg</div>
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <p class="me-2">${item.opskTidText}</p>
-                            <p class="d-flex"><img src="img/stjerne_gul.svg" style="height: 20px" alt="stjerne">${item.opskRate}/5</p>
-                        </div>
-                    </div>
-                </div>
-            `;
-
-            row.appendChild(col);
-        }
-
-        this.items.innerHTML = '';
-        this.items.appendChild(row);
-
+        this.render(data);
     }
 
     async renderMatch(){
         const data = await this.getDataMatch();
-
-        const row = document.createElement('div');
+        this.render(data);
+        /*const row = document.createElement('div');
         row.classList.add('row');
 
         for(const item of data){
@@ -84,6 +47,45 @@ export default class Opskrifter {
                         </div>
                     </div>
                 </div>
+            `;
+
+            row.appendChild(col);
+        }
+
+        this.items.innerHTML = '';
+        this.items.appendChild(row);*/
+    }
+
+    render(data){
+        const row = document.createElement('div');
+        row.classList.add('row');
+
+        for(const item of data){
+            const col = document.createElement('div');
+            col.classList.add('col-12');
+
+            col.innerHTML = `
+                <a class="d-flex flex-row mt-3 mb-3 text-decoration-none text-black" href="opskrift.php?opskId=${item.opskId}">
+                    <div class="col-5">
+                        <img src="img/${item.opskBillede}" style="width: 100%" class="rounded-3">
+                    </div>
+                    <div class="col-7 ps-3 d-flex flex-column justify-content-between">
+                        <div class="">
+                            <h5 class="">${item.opskNavn}</h5>
+                            <div class="d-flex flex-wrap">
+                                <div class="list__items py-1 px-3 m-1 align-items-center">Banan</div>
+                                <div class="list__items py-1 px-3 m-1 align-items-center">Muskatnød</div>
+                                <div class="list__items py-1 px-3 m-1 align-items-center">Banan</div>
+                                <div class="list__items py-1 px-3 m-1 align-items-center">Mel</div>
+                                <div class="list__items py-1 px-3 m-1 align-items-center">Æg</div>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <p class="me-2">${item.opskTidText}</p>
+                            <p class="d-flex"><img src="img/stjerne_gul.svg" style="height: 20px" alt="stjerne">${item.opskRate}/5</p>
+                        </div>
+                    </div>
+                </a>
             `;
 
             row.appendChild(col);

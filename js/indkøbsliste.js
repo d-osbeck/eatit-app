@@ -88,24 +88,54 @@ saveTaskButton.addEventListener("click", () => {
     displayTodo();
 });
 
+
+
 function removeAll(){
     window.localStorage.clear();
     document.getElementById("listBox").innerHTML = "";
-    document.getElementById("welcome").innerHTML = "Liste";
+    document.querySelector(".name").innerHTML = "Liste";
 }
 
 clearList.addEventListener("click", () => {
     removeAll()
 })
 
-var name = document.querySelector('#tbName');
+/*
+const comfirm = document.querySelector(".comfirm");
+
+comfirm.addEventListener('click', () => {
+    callme()
+})
+
+const name = document.querySelector('#tbName');
 
 function callme(){
     localStorage.setItem('userName', name);
 }
 
 if(name) {
-    document.getElementById('welcome').innerText = 'liste';
-} else {
     document.getElementById('welcome').innerText = localStorage.getItem('userName');
+}else{
+    document.getElementById('welcome').innerText = '';
 }
+*/
+
+// Tilføj navn
+
+let inputName = document.querySelector('.inputname');
+let nameSpan = document.querySelector('.name');
+
+function getName (){
+    nameSpan.innerHTML = `${inputName.value}`;
+    localStorage.setItem('listName',inputName.value);
+}
+
+let startGame = document.querySelector('.start');
+
+startGame.addEventListener('click', (e) => {
+    getName(e);
+})
+
+window.addEventListener('load', () => {
+    document.name = localStorage.getItem('listName');
+});

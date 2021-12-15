@@ -13,4 +13,4 @@ function swapImage(){
 
 favorit.addEventListener('click', () => {
    swapImage()
-})
+});

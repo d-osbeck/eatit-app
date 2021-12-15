@@ -76,7 +76,7 @@ export default class Opskrifter {
 
         this.data.ingredientMatch = multipleIngredients
 
-        const response = await fetch('api-opskrift-match.php', {
+        const response = await fetch('apis/api-opskrift-match.php', {
             method: "POST",
             body: JSON.stringify(this.data)
         });
@@ -86,7 +86,7 @@ export default class Opskrifter {
     async getDataRecipes(){
         this.data.nameSearch = this.nameSearch.value;
 
-        const response = await fetch('api-opskrifter.php', {
+        const response = await fetch('apis/api-opskrifter.php', {
             method: "POST",
             body: JSON.stringify(this.data)
         });

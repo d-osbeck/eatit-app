@@ -3,9 +3,11 @@
 <head>
     <meta charset="utf-8">
     <title>Opskrift</title>
+
     <meta name="robots" content="All">
     <meta name="author" content="Udgiver">
     <meta name="copyright" content="Information om copyright">
+
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/opskrift.css" rel="stylesheet" type="text/css">
@@ -47,7 +49,7 @@ $timemin = date("i", $timeFromDb).strip_tags(" min");
     </div>
 </section>
 
-<section>
+<section class="main__opskrift__beskrivelse">
     <img src="img/<?php echo $opskrift->opskBillede; ?>" alt="billede af <?php echo $opskrift->opskNavn; ?>" class="rounded-3 vw-100">
 
     <div class="row my-4">
@@ -120,21 +122,23 @@ $timemin = date("i", $timeFromDb).strip_tags(" min");
     <div class="my-4">
         <h4>Din oplevelse?</h4>
         <div class="stars d-flex flex-row-reverse justify-content-end">
-        <input type="radio" id="one" name="rate" value="1">
         <label for="one"></label>
-        <input type="radio" id="two" name="rate" value="2">
+            <input type="radio" id="one" name="rate" value="1">
         <label for="two"></label>
-        <input type="radio" id="three" name="rate" value="3">
+            <input type="radio" id="two" name="rate" value="2">
         <label for="three"></label>
-        <input type="radio" id="four" name="rate" value="4">
+            <input type="radio" id="three" name="rate" value="3">
         <label for="four"></label>
-        <input type="radio" id="five" name="rate" value="5">
+            <input type="radio" id="four" name="rate" value="4">
         <label for="five"></label>
+            <input type="radio" id="five" name="rate" value="5">
         </div>
     </div>
 </section>
+
 <?php $page="opskrifter.php"?>
-<?php include 'nav.php' ?>
+<?php include "includes/nav.php" ?>
+
 <script src="js/main.js"></script>
 <script src="js/opskrift.js"></script>
 <script src="https://kit.fontawesome.com/d7a71e7a7e.js" crossorigin="anonymous"></script>

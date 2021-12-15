@@ -139,7 +139,7 @@
 </section>
 
 <?php $page="profil.php"?>
-<?php include 'nav.php' ?>
+<?php include "includes/nav.php" ?>
 
 <script src="js/main.js"></script>
 

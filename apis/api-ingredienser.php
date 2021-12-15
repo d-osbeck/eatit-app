@@ -1,13 +1,7 @@
 <?php
-require "settings/init.php";
+require "./settings/init.php";
 
 $data = json_decode(file_get_contents('php://input'), true);
-
-/*
- * password: Skal udfyldes og være Eatit
- * ingrediensSearch: Søg efter ingredienser
- * opskriftSearch: Søg efter opskrifter
- */
 
 header ('content-type: application/json; charset=utf-8');
 

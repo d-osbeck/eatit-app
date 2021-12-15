@@ -1,5 +1,5 @@
 <?php
-require "settings/init.php";
+require "./settings/init.php";
 
 $data = json_decode(file_get_contents('php://input'),true);
 

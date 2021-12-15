@@ -93,16 +93,6 @@ export default class Ingredienser {
         this.matchList.innerHTML = '';
     }
 
-    async getData(){
-        this.data.ingrediensSearch = this.ingrediensSearch.value;
-
-        const response = await fetch('api-ingredienser.php', {
-            method: "POST",
-            body: JSON.stringify(this.data)
-        });
-        return await response.json();
-    }
-
     deleteItem(e) {
         e.stopPropagation();
         const listItem = e.currentTarget;
@@ -164,4 +154,13 @@ export default class Ingredienser {
         })
     }
 
+    async getData(){
+        this.data.ingrediensSearch = this.ingrediensSearch.value;
+
+        const response = await fetch('apis/api-ingredienser.php', {
+            method: "POST",
+            body: JSON.stringify(this.data)
+        });
+        return await response.json();
+    }
 }

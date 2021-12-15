@@ -12,27 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<!--Navn på indkøbslisten
-<div class="modal fade" id="exampleModalCenter1" role="document" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content rounded-3">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Indtaste et navn til listen</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-
-                <form onsubmit="callme()">
-                    <input class="mb-4" style="width: 100%" id="tbName" type="text" placeholder="Liste">
-                    <div class="d-flex justify-content-center">
-                        <button type="button" class="secondary-btn me-3" data-bs-dismiss="modal">Luk</button>
-                        <button type="submit" value="submit" class="main-btn ms-3 comfirm" data-bs-dismiss="modal">Ok</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>-->
+<!--Navn på indkøbslisten-->
 <div class="modal fade" id="exampleModalCenter1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content rounded-3">
@@ -119,8 +99,7 @@
 </section>
 
 <?php $page="indkøbsliste.php"?>
-
-<?php include 'nav.php' ?>
+<?php include "includes/nav.php" ?>
 
 <script src="js/main.js"></script>
 

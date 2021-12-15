@@ -88,7 +88,7 @@
 </section>
 
 <?php $page="profil.php"?>
-<?php include 'nav.php' ?>
+<?php include "includes/nav.php" ?>
 
 <script src="js/main.js"></script>
 <script src="https://kit.fontawesome.com/d7a71e7a7e.js" crossorigin="anonymous"></script>

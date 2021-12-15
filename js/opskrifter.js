@@ -11,7 +11,7 @@ export default class Opskrifter {
 
         this.nameSearch = this.filter.querySelector('.nameSearch');
 
-        this.nameSearch.addEventListener('input', () => this.renderRecipes());
+        this.nameSearch.addEventListener('keyup', () => this.renderRecipes());
         window.addEventListener('load', () => this.renderMatch());
 
     }

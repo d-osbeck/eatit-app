@@ -2,11 +2,16 @@
 <html lang="da">
 <head>
     <meta charset="utf-8">
-    <title>Onboarding</title>
+    <title>Eat it - Onboarding</title>
 
     <meta name="robots" content="All">
-    <meta name="author" content="Udgiver">
-    <meta name="copyright" content="Information om copyright">
+    <meta name="description" content="Eat it er app´en der inspirerer dig til at tænke i nye baner, stoppe madspild lidt efter lidt og gør at du altid har din indkøbsseddel lige ved hånden.">
+    <meta name="author" content="Eat it">
+    <meta name="copyright" content="© Eat it 2021. All Rights Reserved">
+    <meta name="keywords" content="opskrifter, madopskrifter, aftensmad, madspild, indkøbsseddel">
+    <meta name="og:title" content="Eat it - Kom hurtigt i gang">
+    <meta name="og:description" content="Eat it er app´en der inspirerer dig til at tænke i nye baner, stoppe madspild lidt efter lidt og gør at du altid har din indkøbsseddel lige ved hånden.">
+    <meta name="og:type" content="app">
 
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -33,8 +38,8 @@
             </div>
 
             <div class="onboarding__main p-3">
-                <h2 class="onboarding__title mb-4">Vælg ingredienser</h2>
-                <p class="onboarding__description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                <h2 class="onboarding__title mb-4">Eat it</h2>
+                <p class="onboarding__description">Velkommen til en verden af fif, idéer og gode råd, der gør din hverdag lidt nemmere.</p>
             </div>
 
             <div class="d-flex justify-content-center mt-4">
@@ -53,8 +58,8 @@
             </div>
 
             <div class="onboarding__main p-3">
-                <h2 class="onboarding__title mb-4">Søg efter opskrifter</h2>
-                <p class="onboarding__description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                <h2 class="onboarding__title mb-4">Madspild</h2>
+                <p class="onboarding__description">App´en der inspirerer dig til at tænke i nye baner, stoppe madspild lidt efter lidt og gør at du  altid har din indkøbsseddel lige ved hånden.</p>
             </div>
 
             <div class="d-flex justify-content-center mt-4">
@@ -73,8 +78,8 @@
             </div>
 
             <div class="onboarding__main p-3">
-                <h2 class="onboarding__title mb-4">Mindsk madspild</h2>
-                <p class="onboarding__description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                <h2 class="onboarding__title mb-4">Ingredienser</h2>
+                <p class="onboarding__description">Ud fra hvad du har i køleskabet, køkkenskabene eller fryseren giver app´en dig inspiration til at få brugt selv de mest besværlige rester.</p>
             </div>
 
             <div class="d-flex justify-content-center mt-4">
@@ -93,8 +98,8 @@
             </div>
 
             <div class="onboarding__main p-3">
-                <h2 class="onboarding__title mb-4">Velkommen til <span class="highlight-text">Eat It</span></h2>
-                <p class="onboarding__description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                <h2 class="onboarding__title mb-4">Opskrifter</h2>
+                <p class="onboarding__description">Indsæt ingredienserne i søgefeltet og lad dig inspirere af de lækre opskrifter, der er er tilpasset lige til dit behov.</p>
             </div>
 
             <div class="onboarding__btn m-4 mb-3">

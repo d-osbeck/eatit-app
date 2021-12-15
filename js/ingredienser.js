@@ -18,7 +18,7 @@ export default class Ingredienser {
             this.loadFromLocalStorage();
         }
 
-        this.ingrediensSearch.addEventListener('input', () => this.searchIngredienser());
+        this.ingrediensSearch.addEventListener('keyup', () => this.searchIngredienser());
     }
 
     async searchIngredienser(){

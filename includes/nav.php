@@ -1,4 +1,4 @@
-<div class="nav__menu" id="nav-menu">
+<nav class="nav__menu" id="nav-menu">
     <ul class="nav__list d-flex justify-content-between m-0">
         <li class="nav__item list-unstyled">
             <a href="ingredienser.php" class="nav__link <?php echo ($page == "ingredienser.php" ? "active" : "")?>">
@@ -25,4 +25,4 @@
             </a>
         </li>
     </ul>
-</div>
+</nav>

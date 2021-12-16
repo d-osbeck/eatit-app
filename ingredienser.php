@@ -36,7 +36,7 @@
             <svg width="24" height="24" fill="none" viewBox="0 0 24 24" class="me-1">
                 <path stroke="#ADADAD" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.25 19.25L15.5 15.5M4.75 11C4.75 7.54822 7.54822 4.75 11 4.75C14.4518 4.75 17.25 7.54822 17.25 11C17.25 14.4518 14.4518 17.25 11 17.25C7.54822 17.25 4.75 14.4518 4.75 11Z"></path>
             </svg>
-            <label for="search-input"></label>
+            <label for="search-ingredienser-input"></label>
             <input list="ingredienser-suggestions" type="text" class="search-ingredienser-input search-input input" placeholder="Hvilke ingredienser har du?" id="search-ingredienser-input" minlength="2">
         </div>
     </div>
@@ -95,7 +95,7 @@
         </div>
 
         <div class="main__content__confirm d-flex justify-content-center py-4">
-            <a class="text-decoration-none" href="#" class="clear__button">
+            <a class="text-decoration-none clear__button" href="#">
                 <div class="secondary-btn d-flex justify-content-center mx-2 mt-4">
                     <p class="main-btn__title">Start forfra</p>
                 </div>

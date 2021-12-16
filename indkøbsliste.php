@@ -30,7 +30,8 @@
             </div>
             <div class="modal-body">
                 <p class="mb-1">Liste navn:</p>
-                <input class="input-field list__name__field bg-transparent rounded-3 mb-4 w-100" placeholder="Navn">
+                <label for="navn-input"></label>
+                <input class="input-field list__name__field bg-transparent rounded-3 mb-4 w-100" id="navn-input" placeholder="Navn">
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger rounded-3 border-black" data-bs-dismiss="modal">Luk</button>

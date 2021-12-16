@@ -48,7 +48,7 @@
         <div class="main__favorites__item container items__list d-flex flex-wrap">
             <div class="d-flex flex-row mt-3 mb-3">
                 <a class="col-5 text-decoration-none text-body" href="opskrift.php?opskId=5">
-                    <img src="img/bananpandekager.jpeg" style="width: 100%" class="rounded-3" alt="banan pandekager">
+                    <img src="img/bananpandekager.webp" style="width: 100%" class="rounded-3" alt="banan pandekager">
                 </a>
                 <div class="col-7 ps-3 d-flex flex-column justify-content-between">
                     <div class="">
@@ -69,7 +69,7 @@
         <div class="main__favorites__item container items__list d-flex flex-wrap">
             <div class="d-flex flex-row mt-3 mb-3">
                 <a class="col-5 text-decoration-none text-black" href="opskrift.php?opskId=3">
-                    <img src="img/is.jpg" style="width: 100%" class="rounded-3" alt="is">
+                    <img src="img/is.webp" style="width: 100%" class="rounded-3" alt="is">
                 </a>
                 <div class="col-7 ps-3 d-flex flex-column justify-content-between">
                     <div class="">

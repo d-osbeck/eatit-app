@@ -9,7 +9,7 @@
     <meta name="description" content="Eat it er app´en der inspirerer dig til at tænke i nye baner, stoppe madspild lidt efter lidt og gør at du altid har din indkøbsseddel lige ved hånden.">
     <meta name="author" content="Eat it">
     <meta name="copyright" content="© Eat it 2021. All Rights Reserved">
-    <meta name="keywords" content="opskrifter, madopskrifter, aftensmad, madspild, indkøbsseddel">
+    <meta name="keywords" content="opskrifter, madopskrifter, aftensmad, madspild, madrester, indkøbsseddel">
     <meta name="og:title" content="Eat it - Opret og gem din egen indkøbsseddel">
     <meta name="og:description" content="Hold styr på hvad du mangler når du er ude og handle.">
     <meta name="og:type" content="app">

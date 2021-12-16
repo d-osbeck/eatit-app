@@ -8,7 +8,7 @@
     <meta name="description" content="Eat it er app´en der inspirerer dig til at tænke i nye baner, stoppe madspild lidt efter lidt og gør at du altid har din indkøbsseddel lige ved hånden.">
     <meta name="author" content="Eat it">
     <meta name="copyright" content="© Eat it 2021. All Rights Reserved">
-    <meta name="keywords" content="opskrifter, madopskrifter, aftensmad, madspild">
+    <meta name="keywords" content="opskrifter, madopskrifter, aftensmad, madrester, madspild">
 
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">

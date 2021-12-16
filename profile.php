@@ -3,32 +3,25 @@
 <head>
     <meta charset="utf-8">
     <title>Eat it - Profil</title>
-
     <meta name="robots" content="All">
     <meta name="description" content="Eat it er app´en der inspirerer dig til at tænke i nye baner, stoppe madspild lidt efter lidt og gør at du altid har din indkøbsseddel lige ved hånden.">
     <meta name="author" content="Eat it">
     <meta name="copyright" content="© Eat it 2021. All Rights Reserved">
     <meta name="keywords" content="opskrifter, madopskrifter, aftensmad, madspild">
-
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link href="css/profile.css" rel="stylesheet" type="text/css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
 <section class="header pb-0">
     <?php include 'includes/header-bar.php'?>
-
     <div class="header__title d-flex justify-content-center">
         <h1>Profil</h1>
     </div>
 </section>
-
 <section class="main container">
     <div class="main__profile__header container d-flex flex-column justify-content-center align-items-center">
         <div class="main__profile__pic mb-2"></div>
@@ -37,7 +30,6 @@
             <p class="main__item__title fw-normal">Kontooplysninger</p>
         </a>
     </div>
-
     <div class="main__favorites mt-4">
         <div class="main__favorites__titel container d-flex align-items-center mb-3">
             <h1>Favorit opskrifter</h1>
@@ -88,7 +80,6 @@
             </div>
         </div>
     </div>
-
     <div class="main__groceylist mt-4">
         <div class="main__groceylist__titel container d-flex align-items-center mb-3">
             <h1>Mine indkøbslister</h1>
@@ -130,12 +121,9 @@
         </div>
     </div>
 </section>
-
 <?php $page="profil.php"?>
 <?php include 'includes/nav.php' ?>
-
 <script src="js/main.js"></script>
-
 <script src="https://kit.fontawesome.com/d7a71e7a7e.js" crossorigin="anonymous"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>

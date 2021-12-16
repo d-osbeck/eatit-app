@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <title>Eat it - Ingredienser</title>
-
     <meta name="robots" content="All">
     <meta name="description" content="Eat it er app´en der inspirerer dig til at tænke i nye baner, stoppe madspild lidt efter lidt og gør at du altid har din indkøbsseddel lige ved hånden.">
     <meta name="author" content="Eat it">
@@ -12,24 +11,17 @@
     <meta name="og:title" content="Eat it - Indtast dine ingredienser og se opskrifter">
     <meta name="og:description" content="Eat it er app´en der inspirerer dig til at tænke i nye baner, stoppe madspild lidt efter lidt og gør at du altid har din indkøbsseddel lige ved hånden.">
     <meta name="og:type" content="app">
-
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link href="css/ingredienser.css" rel="stylesheet" type="text/css">
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
 <body>
-
 <section class="header pb-0">
     <?php include 'includes/header-bar.php'?>
-
     <div class="header__title d-flex justify-content-center">
         <h1>Ingredienser</h1>
     </div>
 </section>
-
 <section class="main">
     <div class="main__search container d-flex mb-1">
         <div class="input-field w-100">
@@ -43,7 +35,6 @@
     <div id="match-list" class="container">
             <!-- Her vises forslag -->
     </div>
-
     <div class="main__content container">
         <div class="main__content__ingredienser">
             <div class="main__content__title mt-4">
@@ -73,7 +64,6 @@
                     <p>Fisk</p>
                 </div>
             </div>
-
             <div class="row">
                 <div class="col-3 d-flex flex-column justify-content-center align-items-center category-icon">
                     <img src="img/blad.svg" class="global__icon mb-2" alt="icon vegan">
@@ -93,7 +83,6 @@
                 </div>
             </div>
         </div>
-
         <div class="main__content__confirm d-flex justify-content-center py-4">
             <a class="text-decoration-none clear__button" href="#">
                 <div class="secondary-btn d-flex justify-content-center mx-2 mt-4">
@@ -108,18 +97,13 @@
         </div>
     </div>
 </section>
-
-
 <?php $page="ingredienser.php"?>
 <?php include "includes/nav.php" ?>
-
 <script src="js/main.js"></script>
 <script type="module">
     import Ingredienser from "./js/ingredienser.js";
-
     const ingredienser = new Ingredienser();
 </script>
-
 <script src="https://kit.fontawesome.com/d7a71e7a7e.js" crossorigin="anonymous"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>

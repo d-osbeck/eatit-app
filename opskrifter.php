@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <title>Eat it - Find opskrifter</title>
-
     <meta name="robots" content="All">
     <meta name="description" content="Eat it er app´en der inspirerer dig til at tænke i nye baner, stoppe madspild lidt efter lidt og gør at du altid har din indkøbsseddel lige ved hånden.">
     <meta name="author" content="Eat it">
@@ -12,10 +11,8 @@
     <meta name="og:title" content="Eat it - Find opskrifter">
     <meta name="og:description" content="Eat it er app´en der inspirerer dig til at tænke i nye baner, stoppe madspild lidt efter lidt og gør at du altid har din indkøbsseddel lige ved hånden.">
     <meta name="og:type" content="app">
-
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link href="css/opskrifter.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -25,7 +22,6 @@
         <h1>Opskrifter</h1>
     </div>
 </section>
-
 <section class="main">
     <div class="main__search container d-flex mb-3">
         <div class="input-field w-100">
@@ -36,7 +32,6 @@
             <input list="opskrifter-suggestions" type="text" class=" nameSearch search-opskrifter-input search-input input" placeholder="Søg opskrifter eller ingredienser" id="search-opskrifter-input" minlength="2">
         </div>
     </div>
-
     <div class="main__content__categories container my-4">
         <h1 class="mb-3">Kategorier</h1>
         <div class="row mb-3">
@@ -57,7 +52,6 @@
                 <p>Fisk</p>
             </div>
         </div>
-
         <div class="row">
             <div class="col-3 d-flex flex-column justify-content-center align-items-center category-icon">
                 <img src="img/blad.svg" class="global__icon mb-2" alt="icon vegan">
@@ -77,22 +71,17 @@
             </div>
         </div>
     </div>
-
     <div class="items__list container d-flex flex-wrap">
         <!-- Her vises opskrifterne -->
     </div>
 </section>
-
-
 <?php $page="opskrifter.php"?>
 <?php include "includes/nav.php" ?>
-
 <script src="js/main.js"></script>
 <script type="module">
     import Opskrifter from "./js/opskrifter.js";
     const opskrifter = new Opskrifter();
 </script>
-
 <script src="https://kit.fontawesome.com/d7a71e7a7e.js" crossorigin="anonymous"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>

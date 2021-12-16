@@ -17,7 +17,7 @@
 
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link href="css/opskrift.css" rel="stylesheet" type="text/css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -112,7 +112,7 @@ $timemin = date("i", $timeFromDb).strip_tags(" min");
         </div>
 
         <div class="d-flex justify-content-center mt-4">
-            <a href="indkøbsliste.php" class="btn main-btn vw-100 mb-3">Se indkøbsliste</a>
+            <a href="indkøbsliste.php" class="btn main-btn vw-100 mb-3">Se indkøbsseddel</a>
         </div>
     </div>
 

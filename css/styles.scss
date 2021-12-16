@@ -345,3 +345,144 @@ input:checked + .slider:before {
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
+/*Indgredienser*/
+.list__item {
+  background-color: #55795A;
+  color: white;
+  font-size: .875rem;
+  border-radius: 5px;
+}
+
+.items__list i {
+  cursor: pointer;
+}
+
+.ingredients__suggestion i {
+  color: #68BC95;
+}
+
+.ingredienser-suggestions-list {
+  height: 4em !important;
+  overflow: hidden !important;
+}
+
+[list]::-webkit-calendar-picker-indicator {
+  display: none !important;
+}
+/*Login*/
+.main__account img {
+  width: 16px;
+  height: 16px;
+}
+
+.login__label {
+  font-weight: 500;
+}
+
+.login-hide {
+  color: #ADADAD;
+  cursor: pointer;
+}
+
+.login__forgot {
+  display: block;
+  width: max-content;
+  margin-left: auto;
+  margin-top: .5rem;
+  font-size: .875rem;
+  color: #ADADAD;
+}
+
+.register__btn {
+  padding: .75rem 1rem;
+  margin-top: .5rem;
+  border-radius: .5rem;
+  border: 2px solid #55795A;
+  color: #1D1D1D;
+}
+
+.main__tos {
+  font-size: .875rem;
+}
+/*Opskrift*/
+.stars input{
+  display: none;
+}
+.stars label{
+  font-size: 40px;
+  color: lightgrey;
+}
+.stars label:before{
+  content: '★';
+}
+.stars input:checked ~ label{
+  color: gold;
+  text-shadow: 1px 1px #000;
+}
+.stars__color label {
+  color: gold;
+  text-shadow: 1px 1px #000;
+}
+.section__antal__textitems p {
+  margin-bottom: 15px;
+}
+.section__beskrivelse__textitems p {
+  margin-bottom: 15px;
+}
+.img__icon__size {
+  height: 60px;
+}
+.othersrate__icon__size {
+  height: 32px;
+  width: 32px;
+}
+.list__item {
+  background-color: #55795A;
+  color: white;
+  font-size: .875rem;
+  border-radius: 5px;
+}
+.list__item img {
+  height: 15px;
+  width: 15px;
+  color: white;
+}
+/*Opskrifter*/
+.opskrift__billede{
+  border-radius: 15px !important;
+}
+
+.opskrift__info p {
+  font-weight: 500;
+}
+.list__items {
+  background-color: #55795A;
+  color: white;
+  font-size: .875rem;
+  border-radius: 5px;
+}
+/*Profil*/
+.main__profile__pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 30px;
+  background-image: url('../img/placeholder-profile.webp');
+  background-position: center;
+  background-size: cover;
+}
+
+.list__items {
+  background-color: #55795A;
+  color: white;
+  font-size: .875rem;
+  border-radius: 5px;
+}
+
+.titel--icon {
+  height: 25px;
+  width: 25px;
+}
+
+.opskrift__info p {
+  font-weight: 500;
+}

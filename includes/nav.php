@@ -15,7 +15,7 @@
         <li class="nav__item list-unstyled">
             <a href="indkøbsliste.php" class="nav__link <?php echo ($page == "indkøbsliste.php" ? "active" : "")?>">
                 <img src="img/indkøbskurv.svg" class="global__icon mb-2" alt="icon shopping list">
-                <p class="nav__text">Indkøbskurv</p>
+                <p class="nav__text">Indkøbsseddel</p>
             </a>
         </li>
         <li class="nav__item list-unstyled">

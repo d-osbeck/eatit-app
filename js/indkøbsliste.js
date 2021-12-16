@@ -1,15 +1,24 @@
-const clearList = document.getElementById("btn__removeall")
-const text = document.getElementById("text");
-const addTaskButton = document.getElementById("btn__add");
-const saveTaskButton = document.getElementById("btn__save");
-const listBox = document.getElementById("listBox");
-const saveInd = document.getElementById("saveIndex");
+const clearList = document.querySelector('#btn__removeall');
+const text = document.querySelector('#text');
+const addTaskButton = document.querySelector('#btn__add');
+const saveTaskButton = document.querySelector('#btn__save');
+const listBox = document.querySelector('#listBox');
+const saveInd = document.querySelector('#saveIndex');
+const btnDelete = document.querySelector('#btn__delete');
 
 let todoArray = [];
+let myModal = new bootstrap.Modal(document.querySelector('#exampleModalCenter2'));
+let inputName = document.querySelector('.list__name__field');
+let nameSpan = document.querySelector('.name');
+let startGame = document.querySelector('.start');
 
 window.addEventListener('load', () => {
     JSON.parse(window.localStorage.getItem('todo'));
     displayTodo()
+});
+
+window.addEventListener('load', () => {
+    document.name = localStorage.getItem('listName');
 });
 
 addTaskButton.addEventListener("click", (e) => {
@@ -25,6 +34,30 @@ addTaskButton.addEventListener("click", (e) => {
     localStorage.setItem("todo", JSON.stringify(todoArray));
     displayTodo();
 });
+
+saveTaskButton.addEventListener("click", () => {
+    let todo = localStorage.getItem("todo");
+    todoArray = JSON.parse(todo);
+    let id = saveInd.value;
+    todoArray[id] = text.value;
+    addTaskButton.style.display = "block";
+    saveTaskButton.style.display = "none";
+    text.value = "";
+    localStorage.setItem("todo", JSON.stringify(todoArray));
+    displayTodo();
+});
+
+clearList.addEventListener("click", () => {
+    removeAll()
+})
+
+btnDelete.addEventListener('click',() => {
+    deleteTodo()
+})
+
+startGame.addEventListener('click', (e) => {
+    getName(e);
+})
 
 function displayTodo() {
     let todo = localStorage.getItem("todo");
@@ -47,18 +80,6 @@ function displayTodo() {
     listBox.innerHTML = htmlCode;
 }
 
-let myModal = new bootstrap.Modal(document.getElementById('exampleModalCenter2'));
-
-function displayModal () {
-    myModal.show()
-}
-
-const btnDelete = document.getElementById('btn__delete');
-
-btnDelete.addEventListener('click',() => {
-    deleteTodo()
-    })
-
 function deleteTodo(ind) {
     let todo = localStorage.getItem("todo");
     todoArray = JSON.parse(todo);
@@ -76,19 +97,9 @@ function edit(ind) {
     saveTaskButton.style.display = "block";
 }
 
-saveTaskButton.addEventListener("click", () => {
-    let todo = localStorage.getItem("todo");
-    todoArray = JSON.parse(todo);
-    let id = saveInd.value;
-    todoArray[id] = text.value;
-    addTaskButton.style.display = "block";
-    saveTaskButton.style.display = "none";
-    text.value = "";
-    localStorage.setItem("todo", JSON.stringify(todoArray));
-    displayTodo();
-});
-
-
+function displayModal () {
+    myModal.show()
+}
 
 function removeAll(){
     window.localStorage.clear();
@@ -96,46 +107,7 @@ function removeAll(){
     document.querySelector(".name").innerHTML = "Liste";
 }
 
-clearList.addEventListener("click", () => {
-    removeAll()
-})
-
-/*
-const comfirm = document.querySelector(".comfirm");
-
-comfirm.addEventListener('click', () => {
-    callme()
-})
-
-const name = document.querySelector('#tbName');
-
-function callme(){
-    localStorage.setItem('userName', name);
-}
-
-if(name) {
-    document.getElementById('welcome').innerText = localStorage.getItem('userName');
-}else{
-    document.getElementById('welcome').innerText = '';
-}
-*/
-
-// Tilføj navn
-
-let inputName = document.querySelector('.list__name__field');
-let nameSpan = document.querySelector('.name');
-
 function getName (){
     nameSpan.innerHTML = `${inputName.value}`;
     localStorage.setItem('listName',inputName.value);
 }
-
-let startGame = document.querySelector('.start');
-
-startGame.addEventListener('click', (e) => {
-    getName(e);
-})
-
-window.addEventListener('load', () => {
-    document.name = localStorage.getItem('listName');
-});

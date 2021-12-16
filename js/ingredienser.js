@@ -157,7 +157,7 @@ export default class Ingredienser {
     async getData(){
         this.data.ingrediensSearch = this.ingrediensSearch.value;
 
-        const response = await fetch('apis/api-ingredienser.php', {
+        const response = await fetch('api-ingredienser.php', {
             method: "POST",
             body: JSON.stringify(this.data)
         });

@@ -3,17 +3,13 @@
 <head>
     <meta charset="utf-8">
     <title>Eat it - Privatpolitik</title>
-
     <meta name="robots" content="All">
     <meta name="description" content="Eat it er app´en der inspirerer dig til at tænke i nye baner, stoppe madspild lidt efter lidt og gør at du altid har din indkøbsseddel lige ved hånden.">
     <meta name="author" content="Eat it">
     <meta name="copyright" content="© Eat it 2021. All Rights Reserved">
     <meta name="keywords" content="">
-
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link href="css/profile.css" rel="stylesheet" type="text/css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap" rel="stylesheet">
@@ -22,14 +18,11 @@
 <body>
 <section class="header pb-0">
     <?php include 'includes/header-bar.php'?>
-
     <div class="header__title container d-flex justify-content-center mb-4">
         <h1>Cookie- og privatlivspolitik hos Eatit</h1>
     </div>
 </section>
-
 <section class="main">
-
     <div class="main__about__concept container mb-5">
         <h2 class="mb-2">Introduktion</h2>
         <p>
@@ -38,7 +31,6 @@
             I de nedenstående afsnit har vi uddybet, hvad det er for informationer, der indsamles, deres formål og hvilke tredjeparter, der har adgang til dem.
         </p>
     </div>
-
     <div class="main__about__goals container mb-5">
         <h2 class="mb-2">Cookies</h2>
         <p>
@@ -54,7 +46,6 @@
     <div class="main container mb-5">
         <h1 class="mb-3">Personoplysninger</h1>
     </div>
-
     <div class="main__about__goals container mb-5">
         <h2 class="mb-2">Generelt</h2>
         <p>
@@ -67,7 +58,6 @@
             Det sker typisk i forbindelse med, at du opretter et login eller ved køb på siden.
         </p>
     </div>
-
     <div class="main__about__goals container mb-5">
         <h2 class="mb-2">Sikkerhed</h2>
         <p>
@@ -77,7 +67,6 @@
             Vi har truffet tekniske og organisatoriske foranstaltninger mod, at dine oplysninger hændeligt eller ulovligt bliver slettet, offentliggjort, fortabt, forringet eller kommer til uvedkommendes kendskab, misbruges eller i øvrigt behandles i strid med lovgivningen.
         </p>
     </div>
-
     <div class="main__about__goals container mb-5">
         <h2 class="mb-2">Formål</h2>
         <p>
@@ -85,7 +74,6 @@
             Derudover anvender vi oplysningerne til at optimere og forbedre vores services og indhold.
         </p>
     </div>
-
     <div class="main__about__goals container mb-5">
         <h2 class="mb-2">Periode for opbevaring</h2>
         <p>
@@ -94,7 +82,6 @@
             Det er derfor ikke muligt at give en generel tidsramme for, hvornår informationer slettes.
         </p>
     </div>
-
     <div class="main__about__goals container mb-5">
         <h2 class="mb-2">Videregivelse af oplysninger</h2>
         <p>
@@ -107,7 +94,6 @@
             Vi anvender kun databehandlere i EU eller i lande, der kan give dine oplysninger en tilstrækkelig beskyttelse.
         </p>
     </div>
-
     <div class="main__about__goals container mb-5">
         <h2 class="mb-2">Indsigt og klager</h2>
         <p>
@@ -120,7 +106,6 @@
             Ønsker du ikke længere, at vi skal behandle dine personoplysninger, eller at vi skal begrænse behandlingen af dine personoplysninger, kan du også sende os en anmodning herom til ovennævnte e-mailadresse.
         </p>
     </div>
-
     <div class="main__about__goals container mb-5">
         <h2 class="mb-2">Udgiver</h2>
         <p>
@@ -137,14 +122,10 @@
             E-mail: <a href="mailto:support@eatit.dk">support@eatit.dk</a>
         </p>
     </div>
-
 </section>
-
 <?php $page="profil.php"?>
 <?php include "includes/nav.php" ?>
-
 <script src="js/main.js"></script>
-
 <script src="https://kit.fontawesome.com/d7a71e7a7e.js" crossorigin="anonymous"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>

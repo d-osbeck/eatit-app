@@ -3,8 +3,6 @@
 <head>
     <meta charset="utf-8">
     <title>Eat it - Opskrift</title>
-
-
     <meta name="robots" content="All">
     <meta name="description" content="Eat it er app´en der inspirerer dig til at tænke i nye baner, stoppe madspild lidt efter lidt og gør at du altid har din indkøbsseddel lige ved hånden.">
     <meta name="author" content="Eat it">
@@ -13,28 +11,22 @@
     <meta name="og:title" content="Eat it - Find din nye livret">
     <meta name="og:description" content="Eat it er app´en der inspirerer dig til at tænke i nye baner, stoppe madspild lidt efter lidt og gør at du altid har din indkøbsseddel lige ved hånden.">
     <meta name="og:type" content="app">
-
-
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
 <?php
 require "settings/init.php";
 $bind = [':opskId' => $_GET['opskId']];
 $opskrift = $db->sql("SELECT * FROM opskrift WHERE opskId = :opskId", $bind);
 $opskrift = $opskrift[0];
-
 $bind = [':opskId' => $_GET['opskId']];
 $ingr = $db->sql("
     SELECT * FROM opskrift_ingredienser_con
     INNER JOIN ingredienser ON conIngrId = ingrId
     WHERE conOpskId = :opskId
 ", $bind);
-
 $timeFromDb = strtotime("$opskrift->opskTid");
 if (((int) date("H", $timeFromDb)) === 00) {
     $timehour = date(null, $timeFromDb);
@@ -42,12 +34,9 @@ if (((int) date("H", $timeFromDb)) === 00) {
     $timehour = date("h", $timeFromDb).strip_tags(" t");
 }
 $timemin = date("i", $timeFromDb).strip_tags(" min");
-
 ?>
-
 <section class="header pb-0">
     <?php include 'includes/header-bar.php'?>
-
     <div class="header__title row">
         <h1 class="col-10"><?php echo $opskrift->opskNavn; ?></h1>
         <div class="col-2 d-flex justify-content-end">
@@ -55,10 +44,8 @@ $timemin = date("i", $timeFromDb).strip_tags(" min");
         </div>
     </div>
 </section>
-
 <section class="main__opskrift__beskrivelse">
     <img src="img/<?php echo $opskrift->opskBillede; ?>" alt="billede af <?php echo $opskrift->opskNavn; ?>" class="rounded-3 vw-100">
-
     <div class="row my-4">
         <div class="col d-flex flex-column align-items-center">
             <img src="img/ur.svg" alt="ur" class="mb-2 img__icon__size">
@@ -76,7 +63,6 @@ $timemin = date("i", $timeFromDb).strip_tags(" min");
             <p><?php echo $opskrift->opskKcal; ?> kcal pr <br> portion</p>
         </div>
     </div>
-
     <div class="my-4">
         <h4 class="mb-3">Hvad synes andre?</h4>
         <div class="d-flex">
@@ -84,7 +70,6 @@ $timemin = date("i", $timeFromDb).strip_tags(" min");
             <p class="my-auto ms-2"><?php echo $opskrift->opskRate; ?>/5</p>
         </div>
     </div>
-
     <div class="my-4">
         <h4 class="mb-3">Kategorier</h4>
         <div class="d-flex flex-wrap">
@@ -95,7 +80,6 @@ $timemin = date("i", $timeFromDb).strip_tags(" min");
             <div class="list__item py-1 px-3 m-1 align-items-center">Laktosefri</div>
         </div>
     </div>
-
     <div class="my-4">
         <h4 class="mb-3">Ingredienser</h4>
         <div class="d-flex flex-wrap">
@@ -110,42 +94,36 @@ $timemin = date("i", $timeFromDb).strip_tags(" min");
             }
             ?>
         </div>
-
         <div class="d-flex justify-content-center mt-4">
             <a href="indkøbsliste.php" class="btn main-btn vw-100 mb-3">Se indkøbsseddel</a>
         </div>
     </div>
-
     <div class="my-4">
         <h4 class="mb-3">Du skal bruge</h4>
         <div class="section__antal__textitems"><?php echo $opskrift->opskAntal; ?></div>
     </div>
-
     <div class="my-4">
         <h4 class="mb-3">Sådan gør du</h4>
         <div class="section__beskrivelse__textitems"><?php echo $opskrift->opskBeskrivelse; ?></div>
     </div>
-
     <div class="my-4">
         <h4>Din oplevelse?</h4>
         <div class="stars d-flex flex-row-reverse justify-content-end">
-        <label for="one"></label>
             <input type="radio" id="one" name="rate" value="1">
-        <label for="two"></label>
+            <label for="one"></label>
             <input type="radio" id="two" name="rate" value="2">
-        <label for="three"></label>
+            <label for="two"></label>
             <input type="radio" id="three" name="rate" value="3">
-        <label for="four"></label>
+            <label for="three"></label>
             <input type="radio" id="four" name="rate" value="4">
-        <label for="five"></label>
+            <label for="four"></label>
             <input type="radio" id="five" name="rate" value="5">
+            <label for="five"></label>
         </div>
     </div>
 </section>
-
 <?php $page="opskrifter.php"?>
 <?php include "includes/nav.php" ?>
-
 <script src="js/main.js"></script>
 <script src="js/opskrift.js"></script>
 <script src="https://kit.fontawesome.com/d7a71e7a7e.js" crossorigin="anonymous"></script>
